@@ -1,0 +1,117 @@
+\hypertarget{classFighter}{
+\section{Fighter Class Reference}
+\label{classFighter}\index{Fighter@{Fighter}}
+}
+
+
+A type of \hyperlink{classEnemy}{Enemy} which flies in a square pattern while lobbing low-\/damage bullets.  
+
+
+
+
+{\ttfamily \#include $<$fighter.h$>$}
+
+Inheritance diagram for Fighter:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classFighter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFighter_a4c6bf191d7edaabfdddfdb1339b5871d}{Fighter} (QPoint start\_\-location)
+\item 
+virtual void \hyperlink{classFighter_a3d14fd498ce5ade49b5107e3cd296dce}{move} (QPoint player\_\-loc)
+\item 
+\hypertarget{classFighter_a6830b3650703ee2e08e7b451e7cccf5e}{
+std::string {\bfseries getType} ()}
+\label{classFighter_a6830b3650703ee2e08e7b451e7cccf5e}
+
+\item 
+virtual \hyperlink{classEnemy}{Enemy} $\ast$ \hyperlink{classFighter_aa5d46195ac8dcb7c83f61addcb5c2db5}{shoot} (QPoint player\_\-loc)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classFighter_aeb1e672056b207e4450bf681481c3be7}{
+int \hyperlink{classFighter_aeb1e672056b207e4450bf681481c3be7}{counter}}
+\label{classFighter_aeb1e672056b207e4450bf681481c3be7}
+
+\begin{DoxyCompactList}\small\item\em Rolling counter to keep track of when to shoot. \end{DoxyCompactList}\item 
+\hypertarget{classFighter_aba4ad9bc84654bb04ee9777cc35bd1e0}{
+int \hyperlink{classFighter_aba4ad9bc84654bb04ee9777cc35bd1e0}{shootpoint}}
+\label{classFighter_aba4ad9bc84654bb04ee9777cc35bd1e0}
+
+\begin{DoxyCompactList}\small\item\em Randomized threshold to keep track of when to shoot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A type of \hyperlink{classEnemy}{Enemy} which flies in a square pattern while lobbing low-\/damage bullets. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFighter_a4c6bf191d7edaabfdddfdb1339b5871d}{
+\index{Fighter@{Fighter}!Fighter@{Fighter}}
+\index{Fighter@{Fighter}!Fighter@{Fighter}}
+\subsubsection[{Fighter}]{\setlength{\rightskip}{0pt plus 5cm}Fighter::Fighter (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{start\_\-location}
+\end{DoxyParamCaption}
+)}}
+\label{classFighter_a4c6bf191d7edaabfdddfdb1339b5871d}
+Construct a new \hyperlink{classFighter}{Fighter} \hyperlink{classEnemy}{Enemy} 
+\begin{DoxyParams}{Parameters}
+{\em start\_\-location} & The starting location for the \hyperlink{classFighter}{Fighter} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classFighter_a3d14fd498ce5ade49b5107e3cd296dce}{
+\index{Fighter@{Fighter}!move@{move}}
+\index{move@{move}!Fighter@{Fighter}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}void Fighter::move (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{player\_\-loc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFighter_a3d14fd498ce5ade49b5107e3cd296dce}
+Move the \hyperlink{classFighter}{Fighter} according to its internal timer 
+\begin{DoxyParams}{Parameters}
+{\em player\_\-loc} & The player's location \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classEnemy}{Enemy}.
+
+
+
+Reimplemented in \hyperlink{classKamikaze_a41a0df84d6ebd9113c19fed5aa099ca2}{Kamikaze}, and \hyperlink{classSwoopfighter_a787914ca7a7fe222037385867e930480}{Swoopfighter}.
+
+\hypertarget{classFighter_aa5d46195ac8dcb7c83f61addcb5c2db5}{
+\index{Fighter@{Fighter}!shoot@{shoot}}
+\index{shoot@{shoot}!Fighter@{Fighter}}
+\subsubsection[{shoot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Enemy} $\ast$ Fighter::shoot (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{player\_\-loc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classFighter_aa5d46195ac8dcb7c83f61addcb5c2db5}
+Give the fighter the opportunity to shoot a \hyperlink{classBullet}{Bullet}. The fighter will shoot once every 200 ticks (2000ms) \begin{DoxyReturn}{Returns}
+a Bullet$\ast$ if shooting, NULL otherwise 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classEnemy_ae672ccf745ec7fc74f9eb5d2001828d2}{Enemy}.
+
+
+
+Reimplemented in \hyperlink{classKamikaze_ae194f7e2fd550953fdaff15d91962d49}{Kamikaze}, \hyperlink{classLazerFighter_a8249d95ea87e414c34c56ada5d1f8689}{LazerFighter}, and \hyperlink{classSwoopfighter_aba26309d58b59785f9dcbdc7f22d49bd}{Swoopfighter}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+fighter.h\item 
+fighter.cpp\end{DoxyCompactItemize}

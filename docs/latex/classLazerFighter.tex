@@ -1,0 +1,84 @@
+\hypertarget{classLazerFighter}{
+\section{LazerFighter Class Reference}
+\label{classLazerFighter}\index{LazerFighter@{LazerFighter}}
+}
+
+
+\hyperlink{classFighter}{Fighter} \hyperlink{classEnemy}{Enemy} which fires a steady stream of lazer bullets every second or two.  
+
+
+
+
+{\ttfamily \#include $<$lazerfighter.h$>$}
+
+Inheritance diagram for LazerFighter:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classLazerFighter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLazerFighter_a0dec8cfc6b69dd5961f2931ac92cabce}{LazerFighter} (QPoint start\_\-location)
+\item 
+virtual \hyperlink{classEnemy}{Enemy} $\ast$ \hyperlink{classLazerFighter_a8249d95ea87e414c34c56ada5d1f8689}{shoot} (QPoint player\_\-loc)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classLazerFighter_abc4f183e1672142c2ea28102fa20c109}{
+int \hyperlink{classLazerFighter_abc4f183e1672142c2ea28102fa20c109}{ticks}}
+\label{classLazerFighter_abc4f183e1672142c2ea28102fa20c109}
+
+\begin{DoxyCompactList}\small\item\em Keep track of the elapsed ticks to determine shooting time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classFighter}{Fighter} \hyperlink{classEnemy}{Enemy} which fires a steady stream of lazer bullets every second or two. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classLazerFighter_a0dec8cfc6b69dd5961f2931ac92cabce}{
+\index{LazerFighter@{LazerFighter}!LazerFighter@{LazerFighter}}
+\index{LazerFighter@{LazerFighter}!LazerFighter@{LazerFighter}}
+\subsubsection[{LazerFighter}]{\setlength{\rightskip}{0pt plus 5cm}LazerFighter::LazerFighter (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{start\_\-location}
+\end{DoxyParamCaption}
+)}}
+\label{classLazerFighter_a0dec8cfc6b69dd5961f2931ac92cabce}
+Construct a new \hyperlink{classLazerFighter}{LazerFighter} 
+\begin{DoxyParams}{Parameters}
+{\em start\_\-location} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classLazerFighter_a8249d95ea87e414c34c56ada5d1f8689}{
+\index{LazerFighter@{LazerFighter}!shoot@{shoot}}
+\index{shoot@{shoot}!LazerFighter@{LazerFighter}}
+\subsubsection[{shoot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Enemy} $\ast$ LazerFighter::shoot (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{player\_\-loc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classLazerFighter_a8249d95ea87e414c34c56ada5d1f8689}
+Fire a stream of lazers every 1000ms 
+\begin{DoxyParams}{Parameters}
+{\em player\_\-loc} & unused \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bullet$\ast$ or NULL 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFighter_aa5d46195ac8dcb7c83f61addcb5c2db5}{Fighter}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+lazerfighter.h\item 
+lazerfighter.cpp\end{DoxyCompactItemize}

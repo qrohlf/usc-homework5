@@ -1,0 +1,367 @@
+\hypertarget{classPlayer}{
+\section{Player Class Reference}
+\label{classPlayer}\index{Player@{Player}}
+}
+
+
+The hero, \hyperlink{classPlayer}{Player}.  
+
+
+
+
+{\ttfamily \#include $<$player.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPlayer_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{Player} ()
+\item 
+QPoint \hyperlink{classPlayer_a169bb834e15591c3c133d4bbee3aeb0a}{getLocation} ()
+\item 
+QPoint \hyperlink{classPlayer_adc4c9f02a1df8f3a75aafe9559063319}{getRawLocation} ()
+\item 
+void \hyperlink{classPlayer_a80696766994dfa4bb97beb6d3137e7f9}{keyInput} (QKeyEvent $\ast$event, bool releaseEvent)
+\item 
+void \hyperlink{classPlayer_ae02ee46d8c20dd0697b975f935b09839}{move} ()
+\item 
+QImage \hyperlink{classPlayer_ad244f6175a53a1bdefbaccf2ed67fa52}{updateImage} ()
+\item 
+void \hyperlink{classPlayer_a578351347b14a01a5f45dcde9bb0e1a2}{takehit} (int damage)
+\item 
+QImage \hyperlink{classPlayer_a353a2656c396c1623789b54a32148424}{getImage} ()
+\item 
+void \hyperlink{classPlayer_a8f28f6b069f7388877e02ae0a175d4ab}{setHealth} (int health)
+\item 
+int \hyperlink{classPlayer_a97e5447778ae6c384eedc532dcd8431d}{getScore} ()
+\item 
+int \hyperlink{classPlayer_af56ac33b9b2ebd9f97c8a6f485cf2d47}{getLives} ()
+\item 
+int \hyperlink{classPlayer_abcb15d249bed9a4ab0ab86b52b0d747a}{getHealth} ()
+\item 
+void \hyperlink{classPlayer_a5dc98bda088b0e253956ef22eba154f0}{fire} ()
+\item 
+QPoint \hyperlink{classPlayer_a0f84ae7f267cb0785a1cb947fa245c1e}{getBulletLoc} ()
+\item 
+QPoint \hyperlink{classPlayer_aeb73d4ff76f28c599181d94b44250ac4}{getBulletRawLoc} ()
+\item 
+QImage \hyperlink{classPlayer_a19a766cefcea7f009d63e66173424981}{getBulletImage} ()
+\item 
+void \hyperlink{classPlayer_a4c994edd3d4c3b3378501353d73e30cb}{moveBullet} ()
+\item 
+void \hyperlink{classPlayer_a757950bb779c2d720a1da619f59cd490}{resetBullet} ()
+\item 
+bool \hyperlink{classPlayer_a7ef27f709abfa0c2e50d27bb577c6fb5}{bulletActive} ()
+\item 
+void \hyperlink{classPlayer_a2fa3a0d7da7017369d794b5a03034a1c}{addToScore} (int points)
+\item 
+void \hyperlink{classPlayer_a8727f30a9158d732d014a3ab5201b275}{loseLife} ()
+\item 
+void \hyperlink{classPlayer_af25ff749457399a44fa980b907131125}{blink} (int time)
+\item 
+bool \hyperlink{classPlayer_a7a3dc960d32b045a469e1076dd45b6a0}{getBlink} ()
+\item 
+void \hyperlink{classPlayer_a3a5b71a7f0e4b003006dfa1493ddbc80}{setLocation} (QPoint loc)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The hero, \hyperlink{classPlayer}{Player}. 
+
+This object keeps track of score, health, lives, and every other aspect of the \hyperlink{classPlayer}{Player} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPlayer_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\subsubsection[{Player}]{\setlength{\rightskip}{0pt plus 5cm}Player::Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classPlayer_affe0cc3cb714f6deb4e62f0c0d3f1fd8}
+Construct a new \hyperlink{classPlayer}{Player} object 
+
+\subsection{Member Function Documentation}
+\hypertarget{classPlayer_a2fa3a0d7da7017369d794b5a03034a1c}{
+\index{Player@{Player}!addToScore@{addToScore}}
+\index{addToScore@{addToScore}!Player@{Player}}
+\subsubsection[{addToScore}]{\setlength{\rightskip}{0pt plus 5cm}void Player::addToScore (
+\begin{DoxyParamCaption}
+\item[{int}]{points}
+\end{DoxyParamCaption}
+)}}
+\label{classPlayer_a2fa3a0d7da7017369d794b5a03034a1c}
+add to the Player's score 
+\begin{DoxyParams}{Parameters}
+{\em points} & The points to add to the score \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPlayer_af25ff749457399a44fa980b907131125}{
+\index{Player@{Player}!blink@{blink}}
+\index{blink@{blink}!Player@{Player}}
+\subsubsection[{blink}]{\setlength{\rightskip}{0pt plus 5cm}void Player::blink (
+\begin{DoxyParamCaption}
+\item[{int}]{time}
+\end{DoxyParamCaption}
+)}}
+\label{classPlayer_af25ff749457399a44fa980b907131125}
+Instruct the player to blink for 
+\begin{DoxyParams}{Parameters}
+{\em time} & \\
+\hline
+{\em time} & time to blink in ms \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPlayer_a7ef27f709abfa0c2e50d27bb577c6fb5}{
+\index{Player@{Player}!bulletActive@{bulletActive}}
+\index{bulletActive@{bulletActive}!Player@{Player}}
+\subsubsection[{bulletActive}]{\setlength{\rightskip}{0pt plus 5cm}bool Player::bulletActive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classPlayer_a7ef27f709abfa0c2e50d27bb577c6fb5}
+get the status of the bullet \begin{DoxyReturn}{Returns}
+whether the bullet is active 
+\end{DoxyReturn}
+\hypertarget{classPlayer_a5dc98bda088b0e253956ef22eba154f0}{
+\index{Player@{Player}!fire@{fire}}
+\index{fire@{fire}!Player@{Player}}
+\subsubsection[{fire}]{\setlength{\rightskip}{0pt plus 5cm}void Player::fire (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classPlayer_a5dc98bda088b0e253956ef22eba154f0}
+Fire the \hyperlink{classPlayer}{Player} bullet if the bullet is not already active \hypertarget{classPlayer_a7a3dc960d32b045a469e1076dd45b6a0}{
+\index{Player@{Player}!getBlink@{getBlink}}
+\index{getBlink@{getBlink}!Player@{Player}}
+\subsubsection[{getBlink}]{\setlength{\rightskip}{0pt plus 5cm}bool Player::getBlink (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classPlayer_a7a3dc960d32b045a469e1076dd45b6a0}
+Check if the player should be displayed (used for blink effect) \begin{DoxyReturn}{Returns}
+whether the player is currently invisible due to blink 
+\end{DoxyReturn}
+\hypertarget{classPlayer_a19a766cefcea7f009d63e66173424981}{
+\index{Player@{Player}!getBulletImage@{getBulletImage}}
+\index{getBulletImage@{getBulletImage}!Player@{Player}}
+\subsubsection[{getBulletImage}]{\setlength{\rightskip}{0pt plus 5cm}QImage Player::getBulletImage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classPlayer_a19a766cefcea7f009d63e66173424981}
+Get the visual representation of the \hyperlink{classPlayer}{Player} bullet \begin{DoxyReturn}{Returns}
+bullet image 
+\end{DoxyReturn}
+\hypertarget{classPlayer_a0f84ae7f267cb0785a1cb947fa245c1e}{
+\index{Player@{Player}!getBulletLoc@{getBulletLoc}}
+\index{getBulletLoc@{getBulletLoc}!Player@{Player}}
+\subsubsection[{getBulletLoc}]{\setlength{\rightskip}{0pt plus 5cm}QPoint Player::getBulletLoc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classPlayer_a0f84ae7f267cb0785a1cb947fa245c1e}
+Get the location of the \hyperlink{classPlayer}{Player} bullet (adjusted for display) \begin{DoxyReturn}{Returns}
+adjusted bullet location 
+\end{DoxyReturn}
+\hypertarget{classPlayer_aeb73d4ff76f28c599181d94b44250ac4}{
+\index{Player@{Player}!getBulletRawLoc@{getBulletRawLoc}}
+\index{getBulletRawLoc@{getBulletRawLoc}!Player@{Player}}
+\subsubsection[{getBulletRawLoc}]{\setlength{\rightskip}{0pt plus 5cm}QPoint Player::getBulletRawLoc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classPlayer_aeb73d4ff76f28c599181d94b44250ac4}
+Get the location of the \hyperlink{classPlayer}{Player} bullet (centerpoint -\/ not adjusted) \begin{DoxyReturn}{Returns}
+non-\/adjusted bullet location 
+\end{DoxyReturn}
+\hypertarget{classPlayer_abcb15d249bed9a4ab0ab86b52b0d747a}{
+\index{Player@{Player}!getHealth@{getHealth}}
+\index{getHealth@{getHealth}!Player@{Player}}
+\subsubsection[{getHealth}]{\setlength{\rightskip}{0pt plus 5cm}int Player::getHealth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classPlayer_abcb15d249bed9a4ab0ab86b52b0d747a}
+Get the health remaining \begin{DoxyReturn}{Returns}
+health 
+\end{DoxyReturn}
+\hypertarget{classPlayer_a353a2656c396c1623789b54a32148424}{
+\index{Player@{Player}!getImage@{getImage}}
+\index{getImage@{getImage}!Player@{Player}}
+\subsubsection[{getImage}]{\setlength{\rightskip}{0pt plus 5cm}QImage Player::getImage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classPlayer_a353a2656c396c1623789b54a32148424}
+Get the player's visual representation \begin{DoxyReturn}{Returns}
+image 
+\end{DoxyReturn}
+\hypertarget{classPlayer_af56ac33b9b2ebd9f97c8a6f485cf2d47}{
+\index{Player@{Player}!getLives@{getLives}}
+\index{getLives@{getLives}!Player@{Player}}
+\subsubsection[{getLives}]{\setlength{\rightskip}{0pt plus 5cm}int Player::getLives (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classPlayer_af56ac33b9b2ebd9f97c8a6f485cf2d47}
+Get the number of lives remaining \begin{DoxyReturn}{Returns}
+lives 
+\end{DoxyReturn}
+\hypertarget{classPlayer_a169bb834e15591c3c133d4bbee3aeb0a}{
+\index{Player@{Player}!getLocation@{getLocation}}
+\index{getLocation@{getLocation}!Player@{Player}}
+\subsubsection[{getLocation}]{\setlength{\rightskip}{0pt plus 5cm}QPoint Player::getLocation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classPlayer_a169bb834e15591c3c133d4bbee3aeb0a}
+get the location of the player on the GraphicsScene \begin{DoxyReturn}{Returns}
+the upper left hand corner of the object 
+\end{DoxyReturn}
+\hypertarget{classPlayer_adc4c9f02a1df8f3a75aafe9559063319}{
+\index{Player@{Player}!getRawLocation@{getRawLocation}}
+\index{getRawLocation@{getRawLocation}!Player@{Player}}
+\subsubsection[{getRawLocation}]{\setlength{\rightskip}{0pt plus 5cm}QPoint Player::getRawLocation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classPlayer_adc4c9f02a1df8f3a75aafe9559063319}
+get the non-\/adjusted location (midpoint) of the player on the GraphicsScene \begin{DoxyReturn}{Returns}
+the center of the object 
+\end{DoxyReturn}
+\hypertarget{classPlayer_a97e5447778ae6c384eedc532dcd8431d}{
+\index{Player@{Player}!getScore@{getScore}}
+\index{getScore@{getScore}!Player@{Player}}
+\subsubsection[{getScore}]{\setlength{\rightskip}{0pt plus 5cm}int Player::getScore (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classPlayer_a97e5447778ae6c384eedc532dcd8431d}
+get the player's score \begin{DoxyReturn}{Returns}
+score 
+\end{DoxyReturn}
+\hypertarget{classPlayer_a80696766994dfa4bb97beb6d3137e7f9}{
+\index{Player@{Player}!keyInput@{keyInput}}
+\index{keyInput@{keyInput}!Player@{Player}}
+\subsubsection[{keyInput}]{\setlength{\rightskip}{0pt plus 5cm}void Player::keyInput (
+\begin{DoxyParamCaption}
+\item[{QKeyEvent $\ast$}]{event, }
+\item[{bool}]{releaseEvent}
+\end{DoxyParamCaption}
+)}}
+\label{classPlayer_a80696766994dfa4bb97beb6d3137e7f9}
+Respond to key input 
+\begin{DoxyParams}{Parameters}
+{\em event} & The key event \\
+\hline
+{\em releaseEvent} & Whether the event was fired in keyReleaseEvent() or not \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPlayer_a8727f30a9158d732d014a3ab5201b275}{
+\index{Player@{Player}!loseLife@{loseLife}}
+\index{loseLife@{loseLife}!Player@{Player}}
+\subsubsection[{loseLife}]{\setlength{\rightskip}{0pt plus 5cm}void Player::loseLife (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classPlayer_a8727f30a9158d732d014a3ab5201b275}
+call when the \hyperlink{classPlayer}{Player} has lost a life. Score will decrease by 1000 and the player will jump to the default location \hypertarget{classPlayer_ae02ee46d8c20dd0697b975f935b09839}{
+\index{Player@{Player}!move@{move}}
+\index{move@{move}!Player@{Player}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}void Player::move (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classPlayer_ae02ee46d8c20dd0697b975f935b09839}
+move the \hyperlink{classPlayer}{Player} according to Player::direction \hypertarget{classPlayer_a4c994edd3d4c3b3378501353d73e30cb}{
+\index{Player@{Player}!moveBullet@{moveBullet}}
+\index{moveBullet@{moveBullet}!Player@{Player}}
+\subsubsection[{moveBullet}]{\setlength{\rightskip}{0pt plus 5cm}void Player::moveBullet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classPlayer_a4c994edd3d4c3b3378501353d73e30cb}
+move the bullet if active \hypertarget{classPlayer_a757950bb779c2d720a1da619f59cd490}{
+\index{Player@{Player}!resetBullet@{resetBullet}}
+\index{resetBullet@{resetBullet}!Player@{Player}}
+\subsubsection[{resetBullet}]{\setlength{\rightskip}{0pt plus 5cm}void Player::resetBullet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classPlayer_a757950bb779c2d720a1da619f59cd490}
+reset the bullet to inactive \hypertarget{classPlayer_a8f28f6b069f7388877e02ae0a175d4ab}{
+\index{Player@{Player}!setHealth@{setHealth}}
+\index{setHealth@{setHealth}!Player@{Player}}
+\subsubsection[{setHealth}]{\setlength{\rightskip}{0pt plus 5cm}void Player::setHealth (
+\begin{DoxyParamCaption}
+\item[{int}]{newhealth}
+\end{DoxyParamCaption}
+)}}
+\label{classPlayer_a8f28f6b069f7388877e02ae0a175d4ab}
+Set the player's health 
+\begin{DoxyParams}{Parameters}
+{\em newhealth} & the new health value \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPlayer_a3a5b71a7f0e4b003006dfa1493ddbc80}{
+\index{Player@{Player}!setLocation@{setLocation}}
+\index{setLocation@{setLocation}!Player@{Player}}
+\subsubsection[{setLocation}]{\setlength{\rightskip}{0pt plus 5cm}void Player::setLocation (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{loc}
+\end{DoxyParamCaption}
+)}}
+\label{classPlayer_a3a5b71a7f0e4b003006dfa1493ddbc80}
+Jump the player to 
+\begin{DoxyParams}{Parameters}
+{\em loc} & \\
+\hline
+{\em loc} & the location to jump to \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPlayer_a578351347b14a01a5f45dcde9bb0e1a2}{
+\index{Player@{Player}!takehit@{takehit}}
+\index{takehit@{takehit}!Player@{Player}}
+\subsubsection[{takehit}]{\setlength{\rightskip}{0pt plus 5cm}void Player::takehit (
+\begin{DoxyParamCaption}
+\item[{int}]{damage}
+\end{DoxyParamCaption}
+)}}
+\label{classPlayer_a578351347b14a01a5f45dcde9bb0e1a2}
+Have the player take a hit 
+\begin{DoxyParams}{Parameters}
+{\em damage} & -\/ the damage to subtract from health \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPlayer_ad244f6175a53a1bdefbaccf2ed67fa52}{
+\index{Player@{Player}!updateImage@{updateImage}}
+\index{updateImage@{updateImage}!Player@{Player}}
+\subsubsection[{updateImage}]{\setlength{\rightskip}{0pt plus 5cm}QImage Player::updateImage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classPlayer_ad244f6175a53a1bdefbaccf2ed67fa52}
+update the player's image based on the player's direction of travel 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+player.h\item 
+player.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,117 @@
+\hypertarget{classSeeker}{
+\section{Seeker Class Reference}
+\label{classSeeker}\index{Seeker@{Seeker}}
+}
+
+
+An \hyperlink{classEnemy}{Enemy} which homes in on the \hyperlink{classPlayer}{Player} to cause damage.  
+
+
+
+
+{\ttfamily \#include $<$seeker.h$>$}
+
+Inheritance diagram for Seeker:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSeeker}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSeeker_a3b6766e42ed0e15a675268e2efd2d4c3}{Seeker} (QPoint start\_\-location, bool randomstart=false)
+\item 
+virtual void \hyperlink{classSeeker_ad19597b659baf85c43a10ac82b767b4f}{move} (QPoint player\_\-loc)
+\item 
+\hypertarget{classSeeker_aa01cd106cf0f671f8e33c054f7bfa394}{
+std::string {\bfseries getType} ()}
+\label{classSeeker_aa01cd106cf0f671f8e33c054f7bfa394}
+
+\item 
+virtual \hyperlink{classEnemy}{Enemy} $\ast$ \hyperlink{classSeeker_aadb68e05817a4f6c94b87c7a753b0fa8}{shoot} (QPoint player\_\-loc)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classSeeker_a6b6fb611df975d01f9bba2aadc1c1748}{
+QPoint \hyperlink{classSeeker_a6b6fb611df975d01f9bba2aadc1c1748}{home}}
+\label{classSeeker_a6b6fb611df975d01f9bba2aadc1c1748}
+
+\begin{DoxyCompactList}\small\item\em Where the \hyperlink{classSeeker}{Seeker} should return to after the seek cycle is over. \end{DoxyCompactList}\item 
+\hypertarget{classSeeker_a5907cafef7b9944c0acdff81e53813b0}{
+int \hyperlink{classSeeker_a5907cafef7b9944c0acdff81e53813b0}{counter}}
+\label{classSeeker_a5907cafef7b9944c0acdff81e53813b0}
+
+\begin{DoxyCompactList}\small\item\em Keep track of the cycle. \end{DoxyCompactList}\item 
+\hypertarget{classSeeker_a6fe90c18b87d5c788872a287cd339271}{
+QPoint \hyperlink{classSeeker_a6fe90c18b87d5c788872a287cd339271}{direction}}
+\label{classSeeker_a6fe90c18b87d5c788872a287cd339271}
+
+\begin{DoxyCompactList}\small\item\em The Seeker's direction of travel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An \hyperlink{classEnemy}{Enemy} which homes in on the \hyperlink{classPlayer}{Player} to cause damage. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSeeker_a3b6766e42ed0e15a675268e2efd2d4c3}{
+\index{Seeker@{Seeker}!Seeker@{Seeker}}
+\index{Seeker@{Seeker}!Seeker@{Seeker}}
+\subsubsection[{Seeker}]{\setlength{\rightskip}{0pt plus 5cm}Seeker::Seeker (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{start\_\-location, }
+\item[{bool}]{randomstart = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}
+\label{classSeeker_a3b6766e42ed0e15a675268e2efd2d4c3}
+Construct a new \hyperlink{classSeeker}{Seeker} 
+\begin{DoxyParams}{Parameters}
+{\em start\_\-location} & \\
+\hline
+{\em randomstart} & Whether to start the swoop randomly or in unison with other Seekers \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSeeker_ad19597b659baf85c43a10ac82b767b4f}{
+\index{Seeker@{Seeker}!move@{move}}
+\index{move@{move}!Seeker@{Seeker}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}void Seeker::move (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{player\_\-loc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classSeeker_ad19597b659baf85c43a10ac82b767b4f}
+Move the seeker 
+\begin{DoxyParams}{Parameters}
+{\em player\_\-loc} & the \hyperlink{classPlayer}{Player} location \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classEnemy}{Enemy}.
+
+\hypertarget{classSeeker_aadb68e05817a4f6c94b87c7a753b0fa8}{
+\index{Seeker@{Seeker}!shoot@{shoot}}
+\index{shoot@{shoot}!Seeker@{Seeker}}
+\subsubsection[{shoot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Enemy} $\ast$ Seeker::shoot (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{player\_\-loc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classSeeker_aadb68e05817a4f6c94b87c7a753b0fa8}
+Give the seeker an opportunity to shoot \begin{DoxyReturn}{Returns}
+Bullet$\ast$ if shooting, NULL otherwise 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classEnemy_ae672ccf745ec7fc74f9eb5d2001828d2}{Enemy}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+seeker.h\item 
+seeker.cpp\end{DoxyCompactItemize}

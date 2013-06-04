@@ -1,0 +1,127 @@
+\hypertarget{classDetonator}{
+\section{Detonator Class Reference}
+\label{classDetonator}\index{Detonator@{Detonator}}
+}
+
+
+A type of \hyperlink{classEnemy}{Enemy} which will wait several seconds before charging forward and exploding.  
+
+
+
+
+{\ttfamily \#include $<$detonator.h$>$}
+
+Inheritance diagram for Detonator:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classDetonator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDetonator_a15cee4b47245eb2caddf888ad450c7b8}{Detonator} (QPoint start\_\-location, int \hyperlink{classDetonator_ad77bbede7489db9a9bf5e55b58149afb}{ticks\_\-until\_\-charge})
+\item 
+virtual void \hyperlink{classDetonator_a2021949019736250754c3f43d86d164c}{move} (QPoint player\_\-loc)
+\item 
+virtual \hyperlink{classEnemy}{Enemy} $\ast$ \hyperlink{classDetonator_ac18fc8d1ca73813df44799da4fcb86f4}{shoot} (QPoint player\_\-loc)
+\item 
+\hypertarget{classDetonator_aaa19a766d6fc496aa69e991cb07b3605}{
+std::string {\bfseries getType} ()}
+\label{classDetonator_aaa19a766d6fc496aa69e991cb07b3605}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDetonator_ad77bbede7489db9a9bf5e55b58149afb}{
+int \hyperlink{classDetonator_ad77bbede7489db9a9bf5e55b58149afb}{ticks\_\-until\_\-charge}}
+\label{classDetonator_ad77bbede7489db9a9bf5e55b58149afb}
+
+\begin{DoxyCompactList}\small\item\em Keep track of the number of ticks before the \hyperlink{classDetonator}{Detonator} will detonate (-\/100 means immediate detonation) \end{DoxyCompactList}\item 
+\hypertarget{classDetonator_af6f8846d2fd6e80c60d8855accf0c709}{
+int \hyperlink{classDetonator_af6f8846d2fd6e80c60d8855accf0c709}{ticks}}
+\label{classDetonator_af6f8846d2fd6e80c60d8855accf0c709}
+
+\begin{DoxyCompactList}\small\item\em Keep track of the number of ticks which have elapsed. \end{DoxyCompactList}\item 
+\hypertarget{classDetonator_af1269b22ab4a86e854ff9c8fcec99841}{
+bool {\bfseries shootbool}}
+\label{classDetonator_af1269b22ab4a86e854ff9c8fcec99841}
+
+\item 
+\hypertarget{classDetonator_a98487a19ef26de778a452a20af60c54e}{
+int {\bfseries shotcounter}}
+\label{classDetonator_a98487a19ef26de778a452a20af60c54e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A type of \hyperlink{classEnemy}{Enemy} which will wait several seconds before charging forward and exploding. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDetonator_a15cee4b47245eb2caddf888ad450c7b8}{
+\index{Detonator@{Detonator}!Detonator@{Detonator}}
+\index{Detonator@{Detonator}!Detonator@{Detonator}}
+\subsubsection[{Detonator}]{\setlength{\rightskip}{0pt plus 5cm}Detonator::Detonator (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{start\_\-location, }
+\item[{int}]{ticks\_\-until\_\-charge}
+\end{DoxyParamCaption}
+)}}
+\label{classDetonator_a15cee4b47245eb2caddf888ad450c7b8}
+Construct a new \hyperlink{classDetonator}{Detonator} \hyperlink{classEnemy}{Enemy} 
+\begin{DoxyParams}{Parameters}
+{\em start\_\-location} & The starting location for the \hyperlink{classDetonator}{Detonator} \\
+\hline
+{\em ticks\_\-until\_\-charge} & The number of ticks (1 tick=10ms) until the \hyperlink{classDetonator}{Detonator} charges \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDetonator_a2021949019736250754c3f43d86d164c}{
+\index{Detonator@{Detonator}!move@{move}}
+\index{move@{move}!Detonator@{Detonator}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}void Detonator::move (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{player\_\-loc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classDetonator_a2021949019736250754c3f43d86d164c}
+Move the \hyperlink{classDetonator}{Detonator} based on its movement rules 
+\begin{DoxyParams}{Parameters}
+{\em player\_\-loc} & A QPoint containing the player's location \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classEnemy}{Enemy}.
+
+\hypertarget{classDetonator_ac18fc8d1ca73813df44799da4fcb86f4}{
+\index{Detonator@{Detonator}!shoot@{shoot}}
+\index{shoot@{shoot}!Detonator@{Detonator}}
+\subsubsection[{shoot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Enemy} $\ast$ Detonator::shoot (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{player\_\-loc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classDetonator_ac18fc8d1ca73813df44799da4fcb86f4}
+Give the \hyperlink{classDetonator}{Detonator} an opportunity to shoot 
+\begin{DoxyParams}{Parameters}
+{\em player\_\-loc} & A QPoint containing the player's location \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{classBullet}{Bullet} object if the detonator is detonating, NULL otherwise 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classEnemy_ae672ccf745ec7fc74f9eb5d2001828d2}{Enemy}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+detonator.h\item 
+detonator.cpp\end{DoxyCompactItemize}

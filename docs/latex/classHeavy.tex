@@ -1,0 +1,101 @@
+\hypertarget{classHeavy}{
+\section{Heavy Class Reference}
+\label{classHeavy}\index{Heavy@{Heavy}}
+}
+
+
+Durable \hyperlink{classEnemy}{Enemy} which fires powerful homing missiles.  
+
+
+
+
+{\ttfamily \#include $<$heavy.h$>$}
+
+Inheritance diagram for Heavy:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classHeavy}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHeavy_a3f5a50bc7dc25a8164024e41368ce3d4}{Heavy} (QPoint start\_\-location)
+\item 
+void \hyperlink{classHeavy_a195116dc01489b0598c2f2f47b16cc13}{move} (QPoint player\_\-loc)
+\item 
+\hypertarget{classHeavy_a99875d9797ba377ce4c92437a253717e}{
+std::string {\bfseries getType} ()}
+\label{classHeavy_a99875d9797ba377ce4c92437a253717e}
+
+\item 
+virtual \hyperlink{classEnemy}{Enemy} $\ast$ \hyperlink{classHeavy_a04b7bc60937dbc6e9d16cf77659b00c4}{shoot} (QPoint player\_\-loc)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Durable \hyperlink{classEnemy}{Enemy} which fires powerful homing missiles. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHeavy_a3f5a50bc7dc25a8164024e41368ce3d4}{
+\index{Heavy@{Heavy}!Heavy@{Heavy}}
+\index{Heavy@{Heavy}!Heavy@{Heavy}}
+\subsubsection[{Heavy}]{\setlength{\rightskip}{0pt plus 5cm}Heavy::Heavy (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{start\_\-location}
+\end{DoxyParamCaption}
+)}}
+\label{classHeavy_a3f5a50bc7dc25a8164024e41368ce3d4}
+Construct a new heavy 
+\begin{DoxyParams}{Parameters}
+{\em start\_\-location} & the Heavy's starting location \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHeavy_a195116dc01489b0598c2f2f47b16cc13}{
+\index{Heavy@{Heavy}!move@{move}}
+\index{move@{move}!Heavy@{Heavy}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}void Heavy::move (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{player\_\-loc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classHeavy_a195116dc01489b0598c2f2f47b16cc13}
+Move the heavy. (actually just rumble back and forth) 
+\begin{DoxyParams}{Parameters}
+{\em player\_\-loc} & unused \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classEnemy}{Enemy}.
+
+\hypertarget{classHeavy_a04b7bc60937dbc6e9d16cf77659b00c4}{
+\index{Heavy@{Heavy}!shoot@{shoot}}
+\index{shoot@{shoot}!Heavy@{Heavy}}
+\subsubsection[{shoot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Enemy} $\ast$ Heavy::shoot (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{player\_\-loc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classHeavy_a04b7bc60937dbc6e9d16cf77659b00c4}
+Give the heavy an opportunity to shoot 
+\begin{DoxyParams}{Parameters}
+{\em player\_\-loc} & the Player's location \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+NULL if not shooting, otherwise a homing missile Bullet$\ast$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classEnemy_ae672ccf745ec7fc74f9eb5d2001828d2}{Enemy}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+heavy.h\item 
+heavy.cpp\end{DoxyCompactItemize}

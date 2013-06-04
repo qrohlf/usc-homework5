@@ -1,0 +1,103 @@
+\hypertarget{classGiantBoss}{
+\section{GiantBoss Class Reference}
+\label{classGiantBoss}\index{GiantBoss@{GiantBoss}}
+}
+
+
+Huge boss \hyperlink{classEnemy}{Enemy} which is very hard to kill.  
+
+
+
+
+{\ttfamily \#include $<$giantboss.h$>$}
+
+Inheritance diagram for GiantBoss:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classGiantBoss}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGiantBoss_a64caa2ac5183d3e08934c5242fad48d1}{GiantBoss} (QPoint start\_\-location)
+\item 
+void \hyperlink{classGiantBoss_aa11f7cf74faeac897e27ba94ee54bcfb}{move} (QPoint player\_\-loc)
+\item 
+\hypertarget{classGiantBoss_a6e9a0e6c616a7dab0e5b6adb4bdea8ef}{
+std::string {\bfseries getType} ()}
+\label{classGiantBoss_a6e9a0e6c616a7dab0e5b6adb4bdea8ef}
+
+\item 
+virtual \hyperlink{classEnemy}{Enemy} $\ast$ \hyperlink{classGiantBoss_a6c7d445cbdab74bc58ad8166ceed12fa}{shoot} (QPoint player\_\-loc)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Huge boss \hyperlink{classEnemy}{Enemy} which is very hard to kill. 
+
+This \hyperlink{classEnemy}{Enemy} has the distinction of actually shooting other types of \hyperlink{classEnemy}{Enemy} rather than just \hyperlink{classBullet}{Bullet} objects 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classGiantBoss_a64caa2ac5183d3e08934c5242fad48d1}{
+\index{GiantBoss@{GiantBoss}!GiantBoss@{GiantBoss}}
+\index{GiantBoss@{GiantBoss}!GiantBoss@{GiantBoss}}
+\subsubsection[{GiantBoss}]{\setlength{\rightskip}{0pt plus 5cm}GiantBoss::GiantBoss (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{start\_\-location}
+\end{DoxyParamCaption}
+)}}
+\label{classGiantBoss_a64caa2ac5183d3e08934c5242fad48d1}
+Really massive boss for the final level. 
+\begin{DoxyParams}{Parameters}
+{\em start\_\-location} & The Boss's starting location. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classGiantBoss_aa11f7cf74faeac897e27ba94ee54bcfb}{
+\index{GiantBoss@{GiantBoss}!move@{move}}
+\index{move@{move}!GiantBoss@{GiantBoss}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}void GiantBoss::move (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{player\_\-loc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classGiantBoss_aa11f7cf74faeac897e27ba94ee54bcfb}
+Move the \hyperlink{classGiantBoss}{GiantBoss} side to side and increment the looping counter 
+\begin{DoxyParams}{Parameters}
+{\em player\_\-loc} & unused \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classEnemy}{Enemy}.
+
+\hypertarget{classGiantBoss_a6c7d445cbdab74bc58ad8166ceed12fa}{
+\index{GiantBoss@{GiantBoss}!shoot@{shoot}}
+\index{shoot@{shoot}!GiantBoss@{GiantBoss}}
+\subsubsection[{shoot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Enemy} $\ast$ GiantBoss::shoot (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{player\_\-loc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classGiantBoss_a6c7d445cbdab74bc58ad8166ceed12fa}
+Give the \hyperlink{classGiantBoss}{GiantBoss} an opportunity to shoot. 
+\begin{DoxyParams}{Parameters}
+{\em player\_\-loc} & the Player's location \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an Enemy$\ast$ of some kind. The \hyperlink{classGiantBoss}{GiantBoss} shoots a lot of different things. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classEnemy_ae672ccf745ec7fc74f9eb5d2001828d2}{Enemy}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+giantboss.h\item 
+giantboss.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,30 @@
+<RCC>
+    <qresource prefix="/ships">
+        <file>res/boss1.png</file>
+        <file>res/fighter1.png</file>
+        <file>res/fighter2.png</file>
+        <file>res/kamikaze_flame.png</file>
+        <file>res/kamikaze_noflame.png</file>
+        <file>res/player_flat.png</file>
+        <file>res/player_goingleft.png</file>
+        <file>res/player_goingright.png</file>
+        <file>res/bullet_standard.png</file>
+        <file>res/explosion_1.png</file>
+        <file>res/explosion_2.png</file>
+        <file>res/explosion_3.png</file>
+        <file>res/explosion_4.png</file>
+        <file>res/ka1.ttf</file>
+        <file>res/bullet_standard_player.png</file>
+        <file>res/bigbullet.png</file>
+        <file>res/heavy.png</file>
+        <file>res/missile.png</file>
+        <file>res/detonator.png</file>
+        <file>res/lazerfighter.png</file>
+        <file>res/lazer.png</file>
+        <file>res/giantboss.png</file>
+        <file>res/fighter3.png</file>
+        <file>res/stars1.png</file>
+        <file>res/stars2.png</file>
+        <file>res/stars_hyperspace.png</file>
+    </qresource>
+</RCC>

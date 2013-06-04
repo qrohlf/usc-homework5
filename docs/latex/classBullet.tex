@@ -1,0 +1,113 @@
+\hypertarget{classBullet}{
+\section{Bullet Class Reference}
+\label{classBullet}\index{Bullet@{Bullet}}
+}
+
+
+A \hyperlink{classBullet}{Bullet} which travels based on the direction assigned to it. Capable of homing towards the player.  
+
+
+
+
+{\ttfamily \#include $<$bullet.h$>$}
+
+Inheritance diagram for Bullet:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBullet}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBullet_a0c6c11ac580ffc5085b302e7c50efd0b}{Bullet} (QPoint start\_\-location, int damage, QPoint \hyperlink{classBullet_a6f7f13888018bc38f754f95412ad383a}{direction})
+\item 
+void \hyperlink{classBullet_a1bc25157132db7abb6cdaef7a2eb444e}{move} (QPoint player\_\-loc)
+\item 
+\hypertarget{classBullet_a9e8a5aa0097e3aaabaa5249ab0ce325d}{
+std::string {\bfseries getType} ()}
+\label{classBullet_a9e8a5aa0097e3aaabaa5249ab0ce325d}
+
+\item 
+void \hyperlink{classBullet_a53c9638158518d911a823e9d146fb1f9}{setHoming} (bool ishoming)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classBullet_a9e84db7ee7fd067b050b1e4990149121}{
+bool \hyperlink{classBullet_a9e84db7ee7fd067b050b1e4990149121}{homing}}
+\label{classBullet_a9e84db7ee7fd067b050b1e4990149121}
+
+\begin{DoxyCompactList}\small\item\em A flag which determines if the \hyperlink{classBullet}{Bullet} will exhibit homing behavior. \end{DoxyCompactList}\item 
+\hypertarget{classBullet_a6f7f13888018bc38f754f95412ad383a}{
+QPoint \hyperlink{classBullet_a6f7f13888018bc38f754f95412ad383a}{direction}}
+\label{classBullet_a6f7f13888018bc38f754f95412ad383a}
+
+\begin{DoxyCompactList}\small\item\em Used to keep track of the Bullet's direction of travel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classBullet}{Bullet} which travels based on the direction assigned to it. Capable of homing towards the player. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBullet_a0c6c11ac580ffc5085b302e7c50efd0b}{
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\subsubsection[{Bullet}]{\setlength{\rightskip}{0pt plus 5cm}Bullet::Bullet (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{start\_\-location, }
+\item[{int}]{damage, }
+\item[{QPoint}]{direction}
+\end{DoxyParamCaption}
+)}}
+\label{classBullet_a0c6c11ac580ffc5085b302e7c50efd0b}
+Construct a new \hyperlink{classBullet}{Bullet} enemy 
+\begin{DoxyParams}{Parameters}
+{\em start\_\-location} & the starting location for the \hyperlink{classBullet}{Bullet} \\
+\hline
+{\em damage} & how much damage the \hyperlink{classBullet}{Bullet} deals \\
+\hline
+{\em direction} & QPoint containing the direction of the \hyperlink{classBullet}{Bullet} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBullet_a1bc25157132db7abb6cdaef7a2eb444e}{
+\index{Bullet@{Bullet}!move@{move}}
+\index{move@{move}!Bullet@{Bullet}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}void Bullet::move (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{player\_\-loc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classBullet_a1bc25157132db7abb6cdaef7a2eb444e}
+Move the \hyperlink{classBullet}{Bullet} according to its direction and configuration 
+\begin{DoxyParams}{Parameters}
+{\em player\_\-loc} & QPoint containing the player's location \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classEnemy}{Enemy}.
+
+\hypertarget{classBullet_a53c9638158518d911a823e9d146fb1f9}{
+\index{Bullet@{Bullet}!setHoming@{setHoming}}
+\index{setHoming@{setHoming}!Bullet@{Bullet}}
+\subsubsection[{setHoming}]{\setlength{\rightskip}{0pt plus 5cm}void Bullet::setHoming (
+\begin{DoxyParamCaption}
+\item[{bool}]{ishoming}
+\end{DoxyParamCaption}
+)}}
+\label{classBullet_a53c9638158518d911a823e9d146fb1f9}
+Set whether the \hyperlink{classBullet}{Bullet} will adjust its direction to follow the player's movements 
+\begin{DoxyParams}{Parameters}
+{\em ishoming} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+bullet.h\item 
+bullet.cpp\end{DoxyCompactItemize}

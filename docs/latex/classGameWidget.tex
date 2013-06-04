@@ -1,0 +1,434 @@
+\hypertarget{classGameWidget}{
+\section{GameWidget Class Reference}
+\label{classGameWidget}\index{GameWidget@{GameWidget}}
+}
+
+
+The QWidget that handles an entire game.  
+
+
+
+
+{\ttfamily \#include $<$gamewidget.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGameWidget_af02a124557d71b9a4b7388c452cb540b}{GameWidget} (QWidget $\ast$parent=0)
+\item 
+\hyperlink{classGameWidget_ae627172579cbf8d912e035a1844ffd59}{$\sim$GameWidget} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classGameWidget_a198ea51c7a1352a9b0fd8fe5634a1322}{readyPlayerOne} ()
+\item 
+void \hyperlink{classGameWidget_a694457f8936c3f28470a6110224dda68}{mainMenu} ()
+\item 
+void \hyperlink{classGameWidget_aaef4c2312ada597ad67e83b79520ce65}{startGame} ()
+\item 
+void \hyperlink{classGameWidget_acc73be7fb24bd1a2f107f7793cb49b47}{gameOver} ()
+\item 
+void \hyperlink{classGameWidget_a3b226760b90670ad2ad1ddb5a80a73d2}{victory} ()
+\item 
+void \hyperlink{classGameWidget_acd19f060f66bb0b49eb18dfe0b60b71c}{resetGame} ()
+\item 
+void \hyperlink{classGameWidget_a47a187d96dcc0f90d1ddaab764e8cab2}{timerEvent} (QTimerEvent $\ast$event)
+\item 
+void \hyperlink{classGameWidget_a13b69687699966d57a7edeab5ba69824}{keyPressEvent} (QKeyEvent $\ast$event)
+\item 
+void \hyperlink{classGameWidget_ad4778d46b507f8e97170e0482f3e5a67}{keyReleaseEvent} (QKeyEvent $\ast$event)
+\item 
+void \hyperlink{classGameWidget_ac3985eb71fe2666565c9e54536ee3ecb}{paintEvent} (QPaintEvent $\ast$event)
+\item 
+void \hyperlink{classGameWidget_afdbc9010f357a8aa24c338149bbc3a1e}{nextWave} ()
+\item 
+void \hyperlink{classGameWidget_a5f37eb9e2db938f865c9d2d234d4588d}{loadFirstWave} ()
+\item 
+void \hyperlink{classGameWidget_a5a6813ac6a21d8eaf4304afba324bc7c}{loadSecondWave} ()
+\item 
+void \hyperlink{classGameWidget_a09b458fcc598f4f153d2593755c963fb}{loadThirdWave} ()
+\item 
+void \hyperlink{classGameWidget_ae63a48dc36dbe5904c81bda1f634b1a2}{loadFourthWave} ()
+\item 
+void \hyperlink{classGameWidget_acc2c7f9843bbc9c70e79beb56d515021}{loadFifthWave} ()
+\item 
+void \hyperlink{classGameWidget_a67accab7f35805e85c066e1367552933}{loadSixthWave} ()
+\item 
+void \hyperlink{classGameWidget_a1123e9c18879718d2cd84bc1d55fd60f}{loadSeventhWave} ()
+\item 
+void \hyperlink{classGameWidget_ad5fc0735c8a36e6968bc95d8ba0289fe}{loadEighthWave} ()
+\item 
+void \hyperlink{classGameWidget_a6dd247147a23e8a3a35e58e3475a5a38}{loadNinthWave} ()
+\item 
+void \hyperlink{classGameWidget_a095465d347e3448ab6c05b9ec35e8c4e}{loadFinalWave} ()
+\item 
+bool \hyperlink{classGameWidget_ab119ec167f9473af790a404afb53114a}{checkCollision} (\hyperlink{classEnemy}{Enemy} $\ast$en)
+\item 
+bool \hyperlink{classGameWidget_a46e5a8f6be529ef86882d79e92cdb29a}{checkHit} (\hyperlink{classEnemy}{Enemy} $\ast$en)
+\item 
+\hyperlink{classExplosion}{Explosion} $\ast$ \hyperlink{classGameWidget_a6256883328cf6c7c7b1969a3de226ea7}{addExplosion} (\hyperlink{classEnemy}{Enemy} $\ast$en)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classGameWidget_a7db65d0399ddca0f308673e5a99d663e}{
+int \hyperlink{classGameWidget_a7db65d0399ddca0f308673e5a99d663e}{timerId}}
+\label{classGameWidget_a7db65d0399ddca0f308673e5a99d663e}
+
+\begin{DoxyCompactList}\small\item\em Remember the ID of the timer running the game. \end{DoxyCompactList}\item 
+\hypertarget{classGameWidget_a9b3068ba5540fe4ce604af564fcf2d69}{
+std::list$<$ \hyperlink{classEnemy}{Enemy} $\ast$ $>$ \hyperlink{classGameWidget_a9b3068ba5540fe4ce604af564fcf2d69}{enemies}}
+\label{classGameWidget_a9b3068ba5540fe4ce604af564fcf2d69}
+
+\begin{DoxyCompactList}\small\item\em Store all the Enemies which are currently active. \end{DoxyCompactList}\item 
+\hypertarget{classGameWidget_a3d113d275b24d7fbfde4d540cd2fc920}{
+\hyperlink{classPlayer}{Player} \hyperlink{classGameWidget_a3d113d275b24d7fbfde4d540cd2fc920}{player}}
+\label{classGameWidget_a3d113d275b24d7fbfde4d540cd2fc920}
+
+\begin{DoxyCompactList}\small\item\em The \hyperlink{classPlayer}{Player} object. \end{DoxyCompactList}\item 
+\hypertarget{classGameWidget_a77f1e9625fe0490eccd45a9249d2eeed}{
+QFont \hyperlink{classGameWidget_a77f1e9625fe0490eccd45a9249d2eeed}{font}}
+\label{classGameWidget_a77f1e9625fe0490eccd45a9249d2eeed}
+
+\begin{DoxyCompactList}\small\item\em The cool retro font used to paint text. \end{DoxyCompactList}\item 
+\hypertarget{classGameWidget_ab001424d57c49c52b792cfaf5bbd45ee}{
+gameStatus \hyperlink{classGameWidget_ab001424d57c49c52b792cfaf5bbd45ee}{status}}
+\label{classGameWidget_ab001424d57c49c52b792cfaf5bbd45ee}
+
+\begin{DoxyCompactList}\small\item\em Track the game state. \end{DoxyCompactList}\item 
+\hypertarget{classGameWidget_a32f7d37584c30f676edad86b4b0fd077}{
+int \hyperlink{classGameWidget_a32f7d37584c30f676edad86b4b0fd077}{ticks}}
+\label{classGameWidget_a32f7d37584c30f676edad86b4b0fd077}
+
+\begin{DoxyCompactList}\small\item\em multi-\/purpose counter used for messages, victory, and gameover \end{DoxyCompactList}\item 
+\hypertarget{classGameWidget_a3f18e981c913513695fdcefe89a36929}{
+int \hyperlink{classGameWidget_a3f18e981c913513695fdcefe89a36929}{wave}}
+\label{classGameWidget_a3f18e981c913513695fdcefe89a36929}
+
+\begin{DoxyCompactList}\small\item\em Keep track of which wave the \hyperlink{classPlayer}{Player} is on. \end{DoxyCompactList}\item 
+\hypertarget{classGameWidget_a4a0454b1cc244fc4bd07f753225d3d56}{
+QString \hyperlink{classGameWidget_a4a0454b1cc244fc4bd07f753225d3d56}{message}}
+\label{classGameWidget_a4a0454b1cc244fc4bd07f753225d3d56}
+
+\begin{DoxyCompactList}\small\item\em Message to be displayed. \end{DoxyCompactList}\item 
+\hypertarget{classGameWidget_a6cbf198a77bf38ee6fc5a6d935af8137}{
+int \hyperlink{classGameWidget_a6cbf198a77bf38ee6fc5a6d935af8137}{menuSelection}}
+\label{classGameWidget_a6cbf198a77bf38ee6fc5a6d935af8137}
+
+\begin{DoxyCompactList}\small\item\em Keep track of the selected menu item. \end{DoxyCompactList}\item 
+\hypertarget{classGameWidget_a550c56b6ff638102f86ed4261a23e94c}{
+QImage \hyperlink{classGameWidget_a550c56b6ff638102f86ed4261a23e94c}{background\_\-rear}}
+\label{classGameWidget_a550c56b6ff638102f86ed4261a23e94c}
+
+\begin{DoxyCompactList}\small\item\em Store the rear background image. \end{DoxyCompactList}\item 
+\hypertarget{classGameWidget_af513ccb5d0eb080571126361170dca63}{
+QImage \hyperlink{classGameWidget_af513ccb5d0eb080571126361170dca63}{background\_\-front}}
+\label{classGameWidget_af513ccb5d0eb080571126361170dca63}
+
+\begin{DoxyCompactList}\small\item\em Store the front background image. \end{DoxyCompactList}\item 
+\hypertarget{classGameWidget_afd2d792914fd4360aa7baa885113aac9}{
+int \hyperlink{classGameWidget_afd2d792914fd4360aa7baa885113aac9}{background\_\-rear\_\-pos}}
+\label{classGameWidget_afd2d792914fd4360aa7baa885113aac9}
+
+\begin{DoxyCompactList}\small\item\em Rolling counter to track the rear background positioning. \end{DoxyCompactList}\item 
+\hypertarget{classGameWidget_a6dca94e63accd67c70262c5c39828062}{
+int \hyperlink{classGameWidget_a6dca94e63accd67c70262c5c39828062}{background\_\-front\_\-pos}}
+\label{classGameWidget_a6dca94e63accd67c70262c5c39828062}
+
+\begin{DoxyCompactList}\small\item\em Rolling counter to track the front background positioning. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The QWidget that handles an entire game. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classGameWidget_af02a124557d71b9a4b7388c452cb540b}{
+\index{GameWidget@{GameWidget}!GameWidget@{GameWidget}}
+\index{GameWidget@{GameWidget}!GameWidget@{GameWidget}}
+\subsubsection[{GameWidget}]{\setlength{\rightskip}{0pt plus 5cm}GameWidget::GameWidget (
+\begin{DoxyParamCaption}
+\item[{QWidget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}
+\label{classGameWidget_af02a124557d71b9a4b7388c452cb540b}
+Construct a new \hyperlink{classGameWidget}{GameWidget} showing the main menu 
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent QT widget \\
+\hline
+\end{DoxyParams}
+\hypertarget{classGameWidget_ae627172579cbf8d912e035a1844ffd59}{
+\index{GameWidget@{GameWidget}!$\sim$GameWidget@{$\sim$GameWidget}}
+\index{$\sim$GameWidget@{$\sim$GameWidget}!GameWidget@{GameWidget}}
+\subsubsection[{$\sim$GameWidget}]{\setlength{\rightskip}{0pt plus 5cm}GameWidget::$\sim$GameWidget (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classGameWidget_ae627172579cbf8d912e035a1844ffd59}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classGameWidget_a6256883328cf6c7c7b1969a3de226ea7}{
+\index{GameWidget@{GameWidget}!addExplosion@{addExplosion}}
+\index{addExplosion@{addExplosion}!GameWidget@{GameWidget}}
+\subsubsection[{addExplosion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Explosion} $\ast$ GameWidget::addExplosion (
+\begin{DoxyParamCaption}
+\item[{{\bf Enemy} $\ast$}]{en}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGameWidget_a6256883328cf6c7c7b1969a3de226ea7}
+Helper method to replace dead Enemies with explosions 
+\begin{DoxyParams}{Parameters}
+{\em en} & a pointer to the \hyperlink{classEnemy}{Enemy} to replace \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an \hyperlink{classExplosion}{Explosion} pointer which points to a properly sized 500ms explosion 
+\end{DoxyReturn}
+\hypertarget{classGameWidget_ab119ec167f9473af790a404afb53114a}{
+\index{GameWidget@{GameWidget}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!GameWidget@{GameWidget}}
+\subsubsection[{checkCollision}]{\setlength{\rightskip}{0pt plus 5cm}bool GameWidget::checkCollision (
+\begin{DoxyParamCaption}
+\item[{{\bf Enemy} $\ast$}]{en}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGameWidget_ab119ec167f9473af790a404afb53114a}
+Helper method to check for collisions between the ship and Enemies 
+\begin{DoxyParams}{Parameters}
+{\em en} & a pointer to the \hyperlink{classEnemy}{Enemy} to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether the \hyperlink{classEnemy}{Enemy} collides with the \hyperlink{classPlayer}{Player} 
+\end{DoxyReturn}
+\hypertarget{classGameWidget_a46e5a8f6be529ef86882d79e92cdb29a}{
+\index{GameWidget@{GameWidget}!checkHit@{checkHit}}
+\index{checkHit@{checkHit}!GameWidget@{GameWidget}}
+\subsubsection[{checkHit}]{\setlength{\rightskip}{0pt plus 5cm}bool GameWidget::checkHit (
+\begin{DoxyParamCaption}
+\item[{{\bf Enemy} $\ast$}]{en}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGameWidget_a46e5a8f6be529ef86882d79e92cdb29a}
+Helper method to check if the player bullet has hit an \hyperlink{classEnemy}{Enemy} 
+\begin{DoxyParams}{Parameters}
+{\em en} & a pointer to the \hyperlink{classEnemy}{Enemy} to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether the \hyperlink{classEnemy}{Enemy} has been hit by the \hyperlink{classPlayer}{Player} 
+\end{DoxyReturn}
+\hypertarget{classGameWidget_acc73be7fb24bd1a2f107f7793cb49b47}{
+\index{GameWidget@{GameWidget}!gameOver@{gameOver}}
+\index{gameOver@{gameOver}!GameWidget@{GameWidget}}
+\subsubsection[{gameOver}]{\setlength{\rightskip}{0pt plus 5cm}void GameWidget::gameOver (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGameWidget_acc73be7fb24bd1a2f107f7793cb49b47}
+Display the game over message and set status to GAMEOVER. The main menu will be displayed 2000ms after this is called. \hypertarget{classGameWidget_a13b69687699966d57a7edeab5ba69824}{
+\index{GameWidget@{GameWidget}!keyPressEvent@{keyPressEvent}}
+\index{keyPressEvent@{keyPressEvent}!GameWidget@{GameWidget}}
+\subsubsection[{keyPressEvent}]{\setlength{\rightskip}{0pt plus 5cm}void GameWidget::keyPressEvent (
+\begin{DoxyParamCaption}
+\item[{QKeyEvent $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGameWidget_a13b69687699966d57a7edeab5ba69824}
+Respond to key presses based on the game status. 
+\begin{DoxyParams}{Parameters}
+{\em event} & The key event to respond to \\
+\hline
+\end{DoxyParams}
+\hypertarget{classGameWidget_ad4778d46b507f8e97170e0482f3e5a67}{
+\index{GameWidget@{GameWidget}!keyReleaseEvent@{keyReleaseEvent}}
+\index{keyReleaseEvent@{keyReleaseEvent}!GameWidget@{GameWidget}}
+\subsubsection[{keyReleaseEvent}]{\setlength{\rightskip}{0pt plus 5cm}void GameWidget::keyReleaseEvent (
+\begin{DoxyParamCaption}
+\item[{QKeyEvent $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGameWidget_ad4778d46b507f8e97170e0482f3e5a67}
+Respond to key releases based on the game status. 
+\begin{DoxyParams}{Parameters}
+{\em event} & The key event to respond to \\
+\hline
+\end{DoxyParams}
+\hypertarget{classGameWidget_ad5fc0735c8a36e6968bc95d8ba0289fe}{
+\index{GameWidget@{GameWidget}!loadEighthWave@{loadEighthWave}}
+\index{loadEighthWave@{loadEighthWave}!GameWidget@{GameWidget}}
+\subsubsection[{loadEighthWave}]{\setlength{\rightskip}{0pt plus 5cm}void GameWidget::loadEighthWave (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGameWidget_ad5fc0735c8a36e6968bc95d8ba0289fe}
+Load Wave 8 \hypertarget{classGameWidget_acc2c7f9843bbc9c70e79beb56d515021}{
+\index{GameWidget@{GameWidget}!loadFifthWave@{loadFifthWave}}
+\index{loadFifthWave@{loadFifthWave}!GameWidget@{GameWidget}}
+\subsubsection[{loadFifthWave}]{\setlength{\rightskip}{0pt plus 5cm}void GameWidget::loadFifthWave (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGameWidget_acc2c7f9843bbc9c70e79beb56d515021}
+Load Wave 5 \hypertarget{classGameWidget_a095465d347e3448ab6c05b9ec35e8c4e}{
+\index{GameWidget@{GameWidget}!loadFinalWave@{loadFinalWave}}
+\index{loadFinalWave@{loadFinalWave}!GameWidget@{GameWidget}}
+\subsubsection[{loadFinalWave}]{\setlength{\rightskip}{0pt plus 5cm}void GameWidget::loadFinalWave (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGameWidget_a095465d347e3448ab6c05b9ec35e8c4e}
+Load Last Wave \hypertarget{classGameWidget_a5f37eb9e2db938f865c9d2d234d4588d}{
+\index{GameWidget@{GameWidget}!loadFirstWave@{loadFirstWave}}
+\index{loadFirstWave@{loadFirstWave}!GameWidget@{GameWidget}}
+\subsubsection[{loadFirstWave}]{\setlength{\rightskip}{0pt plus 5cm}void GameWidget::loadFirstWave (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGameWidget_a5f37eb9e2db938f865c9d2d234d4588d}
+Load Wave 1 \hypertarget{classGameWidget_ae63a48dc36dbe5904c81bda1f634b1a2}{
+\index{GameWidget@{GameWidget}!loadFourthWave@{loadFourthWave}}
+\index{loadFourthWave@{loadFourthWave}!GameWidget@{GameWidget}}
+\subsubsection[{loadFourthWave}]{\setlength{\rightskip}{0pt plus 5cm}void GameWidget::loadFourthWave (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGameWidget_ae63a48dc36dbe5904c81bda1f634b1a2}
+Load Wave 4 \hypertarget{classGameWidget_a6dd247147a23e8a3a35e58e3475a5a38}{
+\index{GameWidget@{GameWidget}!loadNinthWave@{loadNinthWave}}
+\index{loadNinthWave@{loadNinthWave}!GameWidget@{GameWidget}}
+\subsubsection[{loadNinthWave}]{\setlength{\rightskip}{0pt plus 5cm}void GameWidget::loadNinthWave (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGameWidget_a6dd247147a23e8a3a35e58e3475a5a38}
+Load Wave 9 \hypertarget{classGameWidget_a5a6813ac6a21d8eaf4304afba324bc7c}{
+\index{GameWidget@{GameWidget}!loadSecondWave@{loadSecondWave}}
+\index{loadSecondWave@{loadSecondWave}!GameWidget@{GameWidget}}
+\subsubsection[{loadSecondWave}]{\setlength{\rightskip}{0pt plus 5cm}void GameWidget::loadSecondWave (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGameWidget_a5a6813ac6a21d8eaf4304afba324bc7c}
+Load Wave 2 \hypertarget{classGameWidget_a1123e9c18879718d2cd84bc1d55fd60f}{
+\index{GameWidget@{GameWidget}!loadSeventhWave@{loadSeventhWave}}
+\index{loadSeventhWave@{loadSeventhWave}!GameWidget@{GameWidget}}
+\subsubsection[{loadSeventhWave}]{\setlength{\rightskip}{0pt plus 5cm}void GameWidget::loadSeventhWave (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGameWidget_a1123e9c18879718d2cd84bc1d55fd60f}
+Load Wave 7 \hypertarget{classGameWidget_a67accab7f35805e85c066e1367552933}{
+\index{GameWidget@{GameWidget}!loadSixthWave@{loadSixthWave}}
+\index{loadSixthWave@{loadSixthWave}!GameWidget@{GameWidget}}
+\subsubsection[{loadSixthWave}]{\setlength{\rightskip}{0pt plus 5cm}void GameWidget::loadSixthWave (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGameWidget_a67accab7f35805e85c066e1367552933}
+Load Wave 6 \hypertarget{classGameWidget_a09b458fcc598f4f153d2593755c963fb}{
+\index{GameWidget@{GameWidget}!loadThirdWave@{loadThirdWave}}
+\index{loadThirdWave@{loadThirdWave}!GameWidget@{GameWidget}}
+\subsubsection[{loadThirdWave}]{\setlength{\rightskip}{0pt plus 5cm}void GameWidget::loadThirdWave (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGameWidget_a09b458fcc598f4f153d2593755c963fb}
+Load Wave 3 \hypertarget{classGameWidget_a694457f8936c3f28470a6110224dda68}{
+\index{GameWidget@{GameWidget}!mainMenu@{mainMenu}}
+\index{mainMenu@{mainMenu}!GameWidget@{GameWidget}}
+\subsubsection[{mainMenu}]{\setlength{\rightskip}{0pt plus 5cm}void GameWidget::mainMenu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGameWidget_a694457f8936c3f28470a6110224dda68}
+Reset the game and display the main menu \hypertarget{classGameWidget_afdbc9010f357a8aa24c338149bbc3a1e}{
+\index{GameWidget@{GameWidget}!nextWave@{nextWave}}
+\index{nextWave@{nextWave}!GameWidget@{GameWidget}}
+\subsubsection[{nextWave}]{\setlength{\rightskip}{0pt plus 5cm}void GameWidget::nextWave (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGameWidget_afdbc9010f357a8aa24c338149bbc3a1e}
+Load the appropriate wave based on the value of wave \hypertarget{classGameWidget_ac3985eb71fe2666565c9e54536ee3ecb}{
+\index{GameWidget@{GameWidget}!paintEvent@{paintEvent}}
+\index{paintEvent@{paintEvent}!GameWidget@{GameWidget}}
+\subsubsection[{paintEvent}]{\setlength{\rightskip}{0pt plus 5cm}void GameWidget::paintEvent (
+\begin{DoxyParamCaption}
+\item[{QPaintEvent $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGameWidget_ac3985eb71fe2666565c9e54536ee3ecb}
+Paint the screen based on the game status \hypertarget{classGameWidget_a198ea51c7a1352a9b0fd8fe5634a1322}{
+\index{GameWidget@{GameWidget}!readyPlayerOne@{readyPlayerOne}}
+\index{readyPlayerOne@{readyPlayerOne}!GameWidget@{GameWidget}}
+\subsubsection[{readyPlayerOne}]{\setlength{\rightskip}{0pt plus 5cm}void GameWidget::readyPlayerOne (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGameWidget_a198ea51c7a1352a9b0fd8fe5634a1322}
+Kick off the gam \hypertarget{classGameWidget_acd19f060f66bb0b49eb18dfe0b60b71c}{
+\index{GameWidget@{GameWidget}!resetGame@{resetGame}}
+\index{resetGame@{resetGame}!GameWidget@{GameWidget}}
+\subsubsection[{resetGame}]{\setlength{\rightskip}{0pt plus 5cm}void GameWidget::resetGame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGameWidget_acd19f060f66bb0b49eb18dfe0b60b71c}
+Reset the game. Resets \hyperlink{classPlayer}{Player} to default values, deletes all enemies, and sets wave to 1 \hypertarget{classGameWidget_aaef4c2312ada597ad67e83b79520ce65}{
+\index{GameWidget@{GameWidget}!startGame@{startGame}}
+\index{startGame@{startGame}!GameWidget@{GameWidget}}
+\subsubsection[{startGame}]{\setlength{\rightskip}{0pt plus 5cm}void GameWidget::startGame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGameWidget_aaef4c2312ada597ad67e83b79520ce65}
+Deprecated. Replaced by loadNextWave() \begin{Desc}
+\item[\hyperlink{deprecated__deprecated000004}{Deprecated}]do not use \end{Desc}
+\hypertarget{classGameWidget_a47a187d96dcc0f90d1ddaab764e8cab2}{
+\index{GameWidget@{GameWidget}!timerEvent@{timerEvent}}
+\index{timerEvent@{timerEvent}!GameWidget@{GameWidget}}
+\subsubsection[{timerEvent}]{\setlength{\rightskip}{0pt plus 5cm}void GameWidget::timerEvent (
+\begin{DoxyParamCaption}
+\item[{QTimerEvent $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGameWidget_a47a187d96dcc0f90d1ddaab764e8cab2}
+Timer Event Handler Increment player/enemy locations, menu text, message text, or ticks based on the game status. Increments background locations. Will also repaint the scene. 
+\begin{DoxyParams}{Parameters}
+{\em unused} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classGameWidget_a3b226760b90670ad2ad1ddb5a80a73d2}{
+\index{GameWidget@{GameWidget}!victory@{victory}}
+\index{victory@{victory}!GameWidget@{GameWidget}}
+\subsubsection[{victory}]{\setlength{\rightskip}{0pt plus 5cm}void GameWidget::victory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGameWidget_a3b226760b90670ad2ad1ddb5a80a73d2}
+Display victory message 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+gamewidget.h\item 
+gamewidget.cpp\end{DoxyCompactItemize}

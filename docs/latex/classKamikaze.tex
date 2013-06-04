@@ -1,0 +1,125 @@
+\hypertarget{classKamikaze}{
+\section{Kamikaze Class Reference}
+\label{classKamikaze}\index{Kamikaze@{Kamikaze}}
+}
+
+
+\hyperlink{classFighter}{Fighter} \hyperlink{classEnemy}{Enemy} whose main way of causing damage is to collide with the \hyperlink{classPlayer}{Player}.  
+
+
+
+
+{\ttfamily \#include $<$kamikaze.h$>$}
+
+Inheritance diagram for Kamikaze:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classKamikaze}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classKamikaze_a8fdfa9baea48a14d42067d72f8785b44}{Kamikaze} (QPoint \hyperlink{classKamikaze_ae4257ec55e8a232fa4f16802ce5f5361}{start\_\-location}, int \hyperlink{classKamikaze_a1daf6e11e123fb83099dca5832daf9ce}{ticks\_\-until\_\-charge}, bool \hyperlink{classKamikaze_aeb07c995727bc870195efb244c584239}{respawn}=true)
+\item 
+virtual void \hyperlink{classKamikaze_a41a0df84d6ebd9113c19fed5aa099ca2}{move} (QPoint player\_\-loc)
+\item 
+virtual \hyperlink{classEnemy}{Enemy} $\ast$ \hyperlink{classKamikaze_ae194f7e2fd550953fdaff15d91962d49}{shoot} (QPoint player\_\-loc)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classKamikaze_a1daf6e11e123fb83099dca5832daf9ce}{
+int \hyperlink{classKamikaze_a1daf6e11e123fb83099dca5832daf9ce}{ticks\_\-until\_\-charge}}
+\label{classKamikaze_a1daf6e11e123fb83099dca5832daf9ce}
+
+\begin{DoxyCompactList}\small\item\em The number of ticks until the \hyperlink{classKamikaze}{Kamikaze} will charge. \end{DoxyCompactList}\item 
+\hypertarget{classKamikaze_acaf86edd63975e32ecad37cbe0dea4e1}{
+int \hyperlink{classKamikaze_acaf86edd63975e32ecad37cbe0dea4e1}{ticks\_\-until\_\-charge\_\-original}}
+\label{classKamikaze_acaf86edd63975e32ecad37cbe0dea4e1}
+
+\begin{DoxyCompactList}\small\item\em The number of ticks between each charge. \end{DoxyCompactList}\item 
+\hypertarget{classKamikaze_ac29580b87540ba54da01d88c136d12ba}{
+int \hyperlink{classKamikaze_ac29580b87540ba54da01d88c136d12ba}{ticks}}
+\label{classKamikaze_ac29580b87540ba54da01d88c136d12ba}
+
+\begin{DoxyCompactList}\small\item\em Keep track of the elapsed ticks. \end{DoxyCompactList}\item 
+\hypertarget{classKamikaze_ae4257ec55e8a232fa4f16802ce5f5361}{
+QPoint \hyperlink{classKamikaze_ae4257ec55e8a232fa4f16802ce5f5361}{start\_\-location}}
+\label{classKamikaze_ae4257ec55e8a232fa4f16802ce5f5361}
+
+\begin{DoxyCompactList}\small\item\em Keep track of the spawn location. \end{DoxyCompactList}\item 
+\hypertarget{classKamikaze_aeb07c995727bc870195efb244c584239}{
+bool \hyperlink{classKamikaze_aeb07c995727bc870195efb244c584239}{respawn}}
+\label{classKamikaze_aeb07c995727bc870195efb244c584239}
+
+\begin{DoxyCompactList}\small\item\em Flag to track whether to respawn after exiting the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classFighter}{Fighter} \hyperlink{classEnemy}{Enemy} whose main way of causing damage is to collide with the \hyperlink{classPlayer}{Player}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classKamikaze_a8fdfa9baea48a14d42067d72f8785b44}{
+\index{Kamikaze@{Kamikaze}!Kamikaze@{Kamikaze}}
+\index{Kamikaze@{Kamikaze}!Kamikaze@{Kamikaze}}
+\subsubsection[{Kamikaze}]{\setlength{\rightskip}{0pt plus 5cm}Kamikaze::Kamikaze (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{start\_\-location, }
+\item[{int}]{ticks\_\-until\_\-charge, }
+\item[{bool}]{respawn = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}
+\label{classKamikaze_a8fdfa9baea48a14d42067d72f8785b44}
+Construct a new \hyperlink{classKamikaze}{Kamikaze} \hyperlink{classFighter}{Fighter} 
+\begin{DoxyParams}{Parameters}
+{\em start\_\-location} & \\
+\hline
+{\em ticks\_\-until\_\-charge} & The number of ticks until this \hyperlink{classKamikaze}{Kamikaze} should charge \\
+\hline
+{\em whether} & the \hyperlink{classKamikaze}{Kamikaze} should respawn after going offscreen (default true) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classKamikaze_a41a0df84d6ebd9113c19fed5aa099ca2}{
+\index{Kamikaze@{Kamikaze}!move@{move}}
+\index{move@{move}!Kamikaze@{Kamikaze}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}void Kamikaze::move (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{player\_\-loc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classKamikaze_a41a0df84d6ebd9113c19fed5aa099ca2}
+Move the \hyperlink{classKamikaze}{Kamikaze} 
+\begin{DoxyParams}{Parameters}
+{\em player\_\-loc} & unused \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classFighter_a3d14fd498ce5ade49b5107e3cd296dce}{Fighter}.
+
+\hypertarget{classKamikaze_ae194f7e2fd550953fdaff15d91962d49}{
+\index{Kamikaze@{Kamikaze}!shoot@{shoot}}
+\index{shoot@{shoot}!Kamikaze@{Kamikaze}}
+\subsubsection[{shoot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Enemy} $\ast$ Kamikaze::shoot (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{player\_\-loc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classKamikaze_ae194f7e2fd550953fdaff15d91962d49}
+Shoot like a fighter if behaving like a fighter, otherwise do nothing \begin{DoxyReturn}{Returns}
+NULL if kamikaze-\/diving, return \hyperlink{classFighter_aa5d46195ac8dcb7c83f61addcb5c2db5}{Fighter::shoot()} otherwise 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFighter_aa5d46195ac8dcb7c83f61addcb5c2db5}{Fighter}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+kamikaze.h\item 
+kamikaze.cpp\end{DoxyCompactItemize}

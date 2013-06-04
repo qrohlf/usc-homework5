@@ -1,0 +1,357 @@
+\hypertarget{classEnemy}{
+\section{Enemy Class Reference}
+\label{classEnemy}\index{Enemy@{Enemy}}
+}
+
+
+The abstract base class for all Enemies.  
+
+
+
+
+{\ttfamily \#include $<$enemy.h$>$}
+
+Inheritance diagram for Enemy:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{classEnemy}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual QPoint \hyperlink{classEnemy_adbd413cb01c5dc1ce1c4f8ac8cd5c8fc}{getLocation} ()
+\item 
+QPoint \hyperlink{classEnemy_a3ccfd3839c3dd8a18e2ba8c68832d0b0}{getRawLocation} ()
+\item 
+\hypertarget{classEnemy_a70af8aa3f0c0d050265f6d2f5f3cf4db}{
+virtual void {\bfseries move} (QPoint player\_\-loc)=0}
+\label{classEnemy_a70af8aa3f0c0d050265f6d2f5f3cf4db}
+
+\item 
+\hypertarget{classEnemy_a46cc31007a1b13edce61f2ef041ba425}{
+virtual std::string {\bfseries getType} ()=0}
+\label{classEnemy_a46cc31007a1b13edce61f2ef041ba425}
+
+\item 
+int \hyperlink{classEnemy_af1468155f753afc9a17c30c348a3353f}{takehit} (int damage)
+\item 
+virtual QImage \hyperlink{classEnemy_afa324ecdbc88a1e7a4b8e5e2ab44d4df}{getImage} ()
+\item 
+int \hyperlink{classEnemy_a46341636350ca2bc6aac929b2a84f215}{getHealth} ()
+\item 
+\hyperlink{classEnemy_ac0eec4755e28c02688065f9657150ac3}{$\sim$Enemy} ()
+\item 
+bool \hyperlink{classEnemy_a038e636d16b708f92627348a36750702}{isDead} ()
+\item 
+int \hyperlink{classEnemy_acfbb6534b831828741eff8cf69d16417}{killPoints} ()
+\item 
+void \hyperlink{classEnemy_a04c451624958712b36546037fc25c601}{die} ()
+\item 
+virtual \hyperlink{classEnemy}{Enemy} $\ast$ \hyperlink{classEnemy_ae672ccf745ec7fc74f9eb5d2001828d2}{shoot} (QPoint player\_\-loc)
+\item 
+void \hyperlink{classEnemy_a60ed7bf392ed7a5bcdae46a7f4935715}{setImage} (QImage new\_\-image)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEnemy_ab27454ba27030bc72ef3a1ca56bc7283}{Enemy} (QPoint start\_\-location, int \hyperlink{classEnemy_aedd5e7bf8ef07ee97be433c853a10d8d}{health}, int \hyperlink{classEnemy_a04d876545226672f5e3409359d2210be}{points\_\-per\_\-hit}, int \hyperlink{classEnemy_a217aa59401d8bfc8a20df630238fd3c5}{points\_\-per\_\-kill}, QImage \hyperlink{classEnemy_a2998d1a603172afaffb8011516286eff}{image})
+\item 
+void \hyperlink{classEnemy_a1b568d05f49aa61851e0b5dbc829e0f9}{moveLeft} (int dx)
+\item 
+void \hyperlink{classEnemy_a08fad3127a3e8c0950f977fa03add312}{moveRight} (int dx)
+\item 
+void \hyperlink{classEnemy_af1b125c99ea3a6d2fb2e4d65af3c1fd6}{moveUp} (int dy)
+\item 
+void \hyperlink{classEnemy_a3a5f0da76cabbd327d0c1c7fe0b84c37}{moveDown} (int dy)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEnemy_aedd5e7bf8ef07ee97be433c853a10d8d}{
+int \hyperlink{classEnemy_aedd5e7bf8ef07ee97be433c853a10d8d}{health}}
+\label{classEnemy_aedd5e7bf8ef07ee97be433c853a10d8d}
+
+\begin{DoxyCompactList}\small\item\em The health of the \hyperlink{classEnemy}{Enemy}. \end{DoxyCompactList}\item 
+\hypertarget{classEnemy_a963f6a898c2ecfd53cc6abb283f40123}{
+QPoint \hyperlink{classEnemy_a963f6a898c2ecfd53cc6abb283f40123}{location}}
+\label{classEnemy_a963f6a898c2ecfd53cc6abb283f40123}
+
+\begin{DoxyCompactList}\small\item\em The location of the \hyperlink{classEnemy}{Enemy}. \end{DoxyCompactList}\item 
+\hypertarget{classEnemy_a04d876545226672f5e3409359d2210be}{
+const int \hyperlink{classEnemy_a04d876545226672f5e3409359d2210be}{points\_\-per\_\-hit}}
+\label{classEnemy_a04d876545226672f5e3409359d2210be}
+
+\begin{DoxyCompactList}\small\item\em The points awarded per hit of the \hyperlink{classEnemy}{Enemy}. \end{DoxyCompactList}\item 
+\hypertarget{classEnemy_a217aa59401d8bfc8a20df630238fd3c5}{
+const int \hyperlink{classEnemy_a217aa59401d8bfc8a20df630238fd3c5}{points\_\-per\_\-kill}}
+\label{classEnemy_a217aa59401d8bfc8a20df630238fd3c5}
+
+\begin{DoxyCompactList}\small\item\em The points awarded per kill of the \hyperlink{classEnemy}{Enemy}. \end{DoxyCompactList}\item 
+\hypertarget{classEnemy_a2998d1a603172afaffb8011516286eff}{
+QImage \hyperlink{classEnemy_a2998d1a603172afaffb8011516286eff}{image}}
+\label{classEnemy_a2998d1a603172afaffb8011516286eff}
+
+\begin{DoxyCompactList}\small\item\em The visual used to draw the \hyperlink{classEnemy}{Enemy}. \end{DoxyCompactList}\item 
+bool \hyperlink{classEnemy_a4b1b61e7bc79aca01f3e4b3ef19cb787}{dead}
+\begin{DoxyCompactList}\small\item\em death flag \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The abstract base class for all Enemies. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classEnemy_ac0eec4755e28c02688065f9657150ac3}{
+\index{Enemy@{Enemy}!$\sim$Enemy@{$\sim$Enemy}}
+\index{$\sim$Enemy@{$\sim$Enemy}!Enemy@{Enemy}}
+\subsubsection[{$\sim$Enemy}]{\setlength{\rightskip}{0pt plus 5cm}Enemy::$\sim$Enemy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classEnemy_ac0eec4755e28c02688065f9657150ac3}
+Destroy the \hyperlink{classEnemy}{Enemy} \hypertarget{classEnemy_ab27454ba27030bc72ef3a1ca56bc7283}{
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\subsubsection[{Enemy}]{\setlength{\rightskip}{0pt plus 5cm}Enemy::Enemy (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{start\_\-location, }
+\item[{int}]{health, }
+\item[{int}]{points\_\-per\_\-hit, }
+\item[{int}]{points\_\-per\_\-kill, }
+\item[{QImage}]{new\_\-pixmap}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classEnemy_ab27454ba27030bc72ef3a1ca56bc7283}
+Construct a new \hyperlink{classEnemy}{Enemy} object 
+\begin{DoxyParams}{Parameters}
+{\em start\_\-location} & The starting location for the enemy \\
+\hline
+{\em health} & The amount of health the enemy starts with \\
+\hline
+{\em points\_\-per\_\-hit} & The number of points the player recieves for shooting the \hyperlink{classEnemy}{Enemy} \\
+\hline
+{\em points\_\-per\_\-kill} & The number of points the player recieves for killing the \hyperlink{classEnemy}{Enemy} \\
+\hline
+{\em new\_\-pixmap} & The image used to display the \hyperlink{classEnemy}{Enemy} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classEnemy_a04c451624958712b36546037fc25c601}{
+\index{Enemy@{Enemy}!die@{die}}
+\index{die@{die}!Enemy@{Enemy}}
+\subsubsection[{die}]{\setlength{\rightskip}{0pt plus 5cm}void Enemy::die (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classEnemy_a04c451624958712b36546037fc25c601}
+Kill the \hyperlink{classEnemy}{Enemy} (deprecated, use setHealth(0) instead) \begin{Desc}
+\item[\hyperlink{deprecated__deprecated000001}{Deprecated}]use setHealth(0) instead \end{Desc}
+\hypertarget{classEnemy_a46341636350ca2bc6aac929b2a84f215}{
+\index{Enemy@{Enemy}!getHealth@{getHealth}}
+\index{getHealth@{getHealth}!Enemy@{Enemy}}
+\subsubsection[{getHealth}]{\setlength{\rightskip}{0pt plus 5cm}int Enemy::getHealth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classEnemy_a46341636350ca2bc6aac929b2a84f215}
+Get the Enemy's health \begin{DoxyReturn}{Returns}
+health 
+\end{DoxyReturn}
+\hypertarget{classEnemy_afa324ecdbc88a1e7a4b8e5e2ab44d4df}{
+\index{Enemy@{Enemy}!getImage@{getImage}}
+\index{getImage@{getImage}!Enemy@{Enemy}}
+\subsubsection[{getImage}]{\setlength{\rightskip}{0pt plus 5cm}QImage Enemy::getImage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classEnemy_afa324ecdbc88a1e7a4b8e5e2ab44d4df}
+Get the Enemy's visual representation \begin{DoxyReturn}{Returns}
+The QImage used to display the \hyperlink{classEnemy}{Enemy} 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classExplosion_a2bdd5e10ee21138e8a55550a31e4ff8d}{Explosion}.
+
+\hypertarget{classEnemy_adbd413cb01c5dc1ce1c4f8ac8cd5c8fc}{
+\index{Enemy@{Enemy}!getLocation@{getLocation}}
+\index{getLocation@{getLocation}!Enemy@{Enemy}}
+\subsubsection[{getLocation}]{\setlength{\rightskip}{0pt plus 5cm}QPoint Enemy::getLocation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classEnemy_adbd413cb01c5dc1ce1c4f8ac8cd5c8fc}
+Get the location of the \hyperlink{classEnemy}{Enemy} \begin{DoxyReturn}{Returns}
+a QPoint with the \hyperlink{classEnemy}{Enemy} location (adjusted for display) 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classExplosion_a4e0e5b7c19649b0e9ff7993dd19859d1}{Explosion}.
+
+\hypertarget{classEnemy_a3ccfd3839c3dd8a18e2ba8c68832d0b0}{
+\index{Enemy@{Enemy}!getRawLocation@{getRawLocation}}
+\index{getRawLocation@{getRawLocation}!Enemy@{Enemy}}
+\subsubsection[{getRawLocation}]{\setlength{\rightskip}{0pt plus 5cm}QPoint Enemy::getRawLocation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classEnemy_a3ccfd3839c3dd8a18e2ba8c68832d0b0}
+get the non-\/adjusted location (midpoint) of the enemy on the GraphicsScene \begin{DoxyReturn}{Returns}
+the center of the object 
+\end{DoxyReturn}
+\hypertarget{classEnemy_a038e636d16b708f92627348a36750702}{
+\index{Enemy@{Enemy}!isDead@{isDead}}
+\index{isDead@{isDead}!Enemy@{Enemy}}
+\subsubsection[{isDead}]{\setlength{\rightskip}{0pt plus 5cm}bool Enemy::isDead (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classEnemy_a038e636d16b708f92627348a36750702}
+Check if the dead flag has been set on the \hyperlink{classEnemy}{Enemy} \begin{Desc}
+\item[\hyperlink{deprecated__deprecated000002}{Deprecated}]use \hyperlink{classEnemy_a46341636350ca2bc6aac929b2a84f215}{getHealth()} instead \end{Desc}
+\begin{DoxyReturn}{Returns}
+whether the enemy is dead 
+\end{DoxyReturn}
+\hypertarget{classEnemy_acfbb6534b831828741eff8cf69d16417}{
+\index{Enemy@{Enemy}!killPoints@{killPoints}}
+\index{killPoints@{killPoints}!Enemy@{Enemy}}
+\subsubsection[{killPoints}]{\setlength{\rightskip}{0pt plus 5cm}int Enemy::killPoints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classEnemy_acfbb6534b831828741eff8cf69d16417}
+Get the Enemy's points\_\-per\_\-kill \begin{DoxyReturn}{Returns}
+The points per kill 
+\end{DoxyReturn}
+\hypertarget{classEnemy_a3a5f0da76cabbd327d0c1c7fe0b84c37}{
+\index{Enemy@{Enemy}!moveDown@{moveDown}}
+\index{moveDown@{moveDown}!Enemy@{Enemy}}
+\subsubsection[{moveDown}]{\setlength{\rightskip}{0pt plus 5cm}void Enemy::moveDown (
+\begin{DoxyParamCaption}
+\item[{int}]{dy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classEnemy_a3a5f0da76cabbd327d0c1c7fe0b84c37}
+Move the \hyperlink{classEnemy}{Enemy} dy pixels down 
+\begin{DoxyParams}{Parameters}
+{\em dy} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEnemy_a1b568d05f49aa61851e0b5dbc829e0f9}{
+\index{Enemy@{Enemy}!moveLeft@{moveLeft}}
+\index{moveLeft@{moveLeft}!Enemy@{Enemy}}
+\subsubsection[{moveLeft}]{\setlength{\rightskip}{0pt plus 5cm}void Enemy::moveLeft (
+\begin{DoxyParamCaption}
+\item[{int}]{dx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classEnemy_a1b568d05f49aa61851e0b5dbc829e0f9}
+Move the \hyperlink{classEnemy}{Enemy} dx pixels left 
+\begin{DoxyParams}{Parameters}
+{\em dx} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEnemy_a08fad3127a3e8c0950f977fa03add312}{
+\index{Enemy@{Enemy}!moveRight@{moveRight}}
+\index{moveRight@{moveRight}!Enemy@{Enemy}}
+\subsubsection[{moveRight}]{\setlength{\rightskip}{0pt plus 5cm}void Enemy::moveRight (
+\begin{DoxyParamCaption}
+\item[{int}]{dx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classEnemy_a08fad3127a3e8c0950f977fa03add312}
+Move the \hyperlink{classEnemy}{Enemy} dx pixels right 
+\begin{DoxyParams}{Parameters}
+{\em dx} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEnemy_af1b125c99ea3a6d2fb2e4d65af3c1fd6}{
+\index{Enemy@{Enemy}!moveUp@{moveUp}}
+\index{moveUp@{moveUp}!Enemy@{Enemy}}
+\subsubsection[{moveUp}]{\setlength{\rightskip}{0pt plus 5cm}void Enemy::moveUp (
+\begin{DoxyParamCaption}
+\item[{int}]{dy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classEnemy_af1b125c99ea3a6d2fb2e4d65af3c1fd6}
+Move the \hyperlink{classEnemy}{Enemy} dy pixels up 
+\begin{DoxyParams}{Parameters}
+{\em dy} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEnemy_a60ed7bf392ed7a5bcdae46a7f4935715}{
+\index{Enemy@{Enemy}!setImage@{setImage}}
+\index{setImage@{setImage}!Enemy@{Enemy}}
+\subsubsection[{setImage}]{\setlength{\rightskip}{0pt plus 5cm}void Enemy::setImage (
+\begin{DoxyParamCaption}
+\item[{QImage}]{new\_\-image}
+\end{DoxyParamCaption}
+)}}
+\label{classEnemy_a60ed7bf392ed7a5bcdae46a7f4935715}
+Set the Enemy's visual representation 
+\begin{DoxyParams}{Parameters}
+{\em new\_\-image} & The new image to display for the \hyperlink{classEnemy}{Enemy} \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEnemy_ae672ccf745ec7fc74f9eb5d2001828d2}{
+\index{Enemy@{Enemy}!shoot@{shoot}}
+\index{shoot@{shoot}!Enemy@{Enemy}}
+\subsubsection[{shoot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Enemy} $\ast$ Enemy::shoot (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{player\_\-loc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classEnemy_ae672ccf745ec7fc74f9eb5d2001828d2}
+Shoot method for \hyperlink{classEnemy}{Enemy} abstract base class \begin{DoxyReturn}{Returns}
+NULL 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classBoss_a43e296701933cb2cc18d7d6cfe521de5}{Boss}, \hyperlink{classDetonator_ac18fc8d1ca73813df44799da4fcb86f4}{Detonator}, \hyperlink{classFighter_aa5d46195ac8dcb7c83f61addcb5c2db5}{Fighter}, \hyperlink{classGiantBoss_a6c7d445cbdab74bc58ad8166ceed12fa}{GiantBoss}, \hyperlink{classHeavy_a04b7bc60937dbc6e9d16cf77659b00c4}{Heavy}, \hyperlink{classKamikaze_ae194f7e2fd550953fdaff15d91962d49}{Kamikaze}, \hyperlink{classLazerFighter_a8249d95ea87e414c34c56ada5d1f8689}{LazerFighter}, \hyperlink{classSeeker_aadb68e05817a4f6c94b87c7a753b0fa8}{Seeker}, and \hyperlink{classSwoopfighter_aba26309d58b59785f9dcbdc7f22d49bd}{Swoopfighter}.
+
+\hypertarget{classEnemy_af1468155f753afc9a17c30c348a3353f}{
+\index{Enemy@{Enemy}!takehit@{takehit}}
+\index{takehit@{takehit}!Enemy@{Enemy}}
+\subsubsection[{takehit}]{\setlength{\rightskip}{0pt plus 5cm}int Enemy::takehit (
+\begin{DoxyParamCaption}
+\item[{int}]{damage}
+\end{DoxyParamCaption}
+)}}
+\label{classEnemy_af1468155f753afc9a17c30c348a3353f}
+Signal the enemy to take a hit 
+\begin{DoxyParams}{Parameters}
+{\em damage} & The damage to deal to the \hyperlink{classEnemy}{Enemy} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+score The points to be awarded for hitting and/or killing the \hyperlink{classEnemy}{Enemy} 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classEnemy_a4b1b61e7bc79aca01f3e4b3ef19cb787}{
+\index{Enemy@{Enemy}!dead@{dead}}
+\index{dead@{dead}!Enemy@{Enemy}}
+\subsubsection[{dead}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf Enemy::dead}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classEnemy_a4b1b61e7bc79aca01f3e4b3ef19cb787}
+
+
+death flag 
+
+\begin{Desc}
+\item[\hyperlink{deprecated__deprecated000003}{Deprecated}]death is now determined by health \end{Desc}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+enemy.h\item 
+enemy.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,136 @@
+\hypertarget{classExplosion}{
+\section{Explosion Class Reference}
+\label{classExplosion}\index{Explosion@{Explosion}}
+}
+
+
+A special type of \hyperlink{classEnemy}{Enemy} used to animate the explosion of other Enemies Explosions are exempt from collision and bullet-\/hit checking.  
+
+
+
+
+{\ttfamily \#include $<$explosion.h$>$}
+
+Inheritance diagram for Explosion:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classExplosion}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classExplosion_aa8015e849906d4c37e0542047100c25b}{Explosion} (QPoint starting\_\-location, int duration)
+\item 
+void \hyperlink{classExplosion_a517d074124497b4c66503c3f2508e70e}{move} (QPoint player\_\-loc)
+\item 
+\hypertarget{classExplosion_a1ae628a63aa7ae66507b6795b6cd1c91}{
+std::string {\bfseries getType} ()}
+\label{classExplosion_a1ae628a63aa7ae66507b6795b6cd1c91}
+
+\item 
+QImage \hyperlink{classExplosion_a2bdd5e10ee21138e8a55550a31e4ff8d}{getImage} ()
+\item 
+QPoint \hyperlink{classExplosion_a4e0e5b7c19649b0e9ff7993dd19859d1}{getLocation} ()
+\item 
+void \hyperlink{classExplosion_ae66ab47347568858b246975d0da05a28}{setScale} (int width, int height)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A special type of \hyperlink{classEnemy}{Enemy} used to animate the explosion of other Enemies Explosions are exempt from collision and bullet-\/hit checking. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classExplosion_aa8015e849906d4c37e0542047100c25b}{
+\index{Explosion@{Explosion}!Explosion@{Explosion}}
+\index{Explosion@{Explosion}!Explosion@{Explosion}}
+\subsubsection[{Explosion}]{\setlength{\rightskip}{0pt plus 5cm}Explosion::Explosion (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{starting\_\-location, }
+\item[{int}]{duration}
+\end{DoxyParamCaption}
+)}}
+\label{classExplosion_aa8015e849906d4c37e0542047100c25b}
+A class used to replace an \hyperlink{classEnemy}{Enemy} with an \hyperlink{classExplosion}{Explosion}. Explosions are ignored by the collision and bullet-\/tracking methods and cannot cause or take damage. They die after 
+\begin{DoxyParams}{Parameters}
+{\em duration} & \\
+\hline
+{\em starting\_\-location} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classExplosion_a2bdd5e10ee21138e8a55550a31e4ff8d}{
+\index{Explosion@{Explosion}!getImage@{getImage}}
+\index{getImage@{getImage}!Explosion@{Explosion}}
+\subsubsection[{getImage}]{\setlength{\rightskip}{0pt plus 5cm}QImage Explosion::getImage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classExplosion_a2bdd5e10ee21138e8a55550a31e4ff8d}
+Override of \hyperlink{classEnemy_afa324ecdbc88a1e7a4b8e5e2ab44d4df}{Enemy::getImage()} to account for the scale factor of the explosion \begin{DoxyReturn}{Returns}
+scaled explosion image 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classEnemy_afa324ecdbc88a1e7a4b8e5e2ab44d4df}{Enemy}.
+
+\hypertarget{classExplosion_a4e0e5b7c19649b0e9ff7993dd19859d1}{
+\index{Explosion@{Explosion}!getLocation@{getLocation}}
+\index{getLocation@{getLocation}!Explosion@{Explosion}}
+\subsubsection[{getLocation}]{\setlength{\rightskip}{0pt plus 5cm}QPoint Explosion::getLocation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classExplosion_a4e0e5b7c19649b0e9ff7993dd19859d1}
+Override of \hyperlink{classEnemy_adbd413cb01c5dc1ce1c4f8ac8cd5c8fc}{Enemy::getLocation()} to account for the scale factor of the explosion. \begin{DoxyReturn}{Returns}
+location 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classEnemy_adbd413cb01c5dc1ce1c4f8ac8cd5c8fc}{Enemy}.
+
+\hypertarget{classExplosion_a517d074124497b4c66503c3f2508e70e}{
+\index{Explosion@{Explosion}!move@{move}}
+\index{move@{move}!Explosion@{Explosion}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}void Explosion::move (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{player\_\-loc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classExplosion_a517d074124497b4c66503c3f2508e70e}
+Increment the Explosion's animation 
+\begin{DoxyParams}{Parameters}
+{\em player\_\-loc} & The player's location \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classEnemy}{Enemy}.
+
+\hypertarget{classExplosion_ae66ab47347568858b246975d0da05a28}{
+\index{Explosion@{Explosion}!setScale@{setScale}}
+\index{setScale@{setScale}!Explosion@{Explosion}}
+\subsubsection[{setScale}]{\setlength{\rightskip}{0pt plus 5cm}void Explosion::setScale (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)}}
+\label{classExplosion_ae66ab47347568858b246975d0da05a28}
+Set the scale factor of the explosion 
+\begin{DoxyParams}{Parameters}
+{\em width} & desired width \\
+\hline
+{\em height} & desired height \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+explosion.h\item 
+explosion.cpp\end{DoxyCompactItemize}

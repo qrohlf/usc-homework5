@@ -1,0 +1,108 @@
+\hypertarget{classBoss}{
+\section{Boss Class Reference}
+\label{classBoss}\index{Boss@{Boss}}
+}
+
+
+A simple boss \hyperlink{classEnemy}{Enemy} which tracks the player's x coordinate.  
+
+
+
+
+{\ttfamily \#include $<$boss.h$>$}
+
+Inheritance diagram for Boss:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBoss}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBoss_af210e2207954567df9de3864e0140fd7}{Boss} (QPoint start\_\-location)
+\item 
+void \hyperlink{classBoss_a7ea6b19aa73f4c7b2d68fae9c0d3726f}{move} (QPoint player\_\-loc)
+\item 
+\hypertarget{classBoss_ae6ba0c94d4c5516ff05fddc9a0f1a203}{
+std::string {\bfseries getType} ()}
+\label{classBoss_ae6ba0c94d4c5516ff05fddc9a0f1a203}
+
+\item 
+virtual \hyperlink{classEnemy}{Enemy} $\ast$ \hyperlink{classBoss_a43e296701933cb2cc18d7d6cfe521de5}{shoot} (QPoint player\_\-loc)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classBoss_a9c87e476d730f8ed3a925b2e07bbd945}{
+int \hyperlink{classBoss_a9c87e476d730f8ed3a925b2e07bbd945}{counter}}
+\label{classBoss_a9c87e476d730f8ed3a925b2e07bbd945}
+
+\begin{DoxyCompactList}\small\item\em A counter to keep track of where the \hyperlink{classBoss}{Boss} is in its firing cycle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A simple boss \hyperlink{classEnemy}{Enemy} which tracks the player's x coordinate. 
+
+the \hyperlink{classBoss}{Boss} shoots aimed (but non-\/homing) missiles 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBoss_af210e2207954567df9de3864e0140fd7}{
+\index{Boss@{Boss}!Boss@{Boss}}
+\index{Boss@{Boss}!Boss@{Boss}}
+\subsubsection[{Boss}]{\setlength{\rightskip}{0pt plus 5cm}Boss::Boss (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{start\_\-location}
+\end{DoxyParamCaption}
+)}}
+\label{classBoss_af210e2207954567df9de3864e0140fd7}
+Construct a new \hyperlink{classBoss}{Boss} \hyperlink{classEnemy}{Enemy} at the given location 
+\begin{DoxyParams}{Parameters}
+{\em start\_\-location} & QPoint containing the starting location \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBoss_a7ea6b19aa73f4c7b2d68fae9c0d3726f}{
+\index{Boss@{Boss}!move@{move}}
+\index{move@{move}!Boss@{Boss}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}void Boss::move (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{player\_\-loc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classBoss_a7ea6b19aa73f4c7b2d68fae9c0d3726f}
+Move the \hyperlink{classBoss}{Boss} to track the player's movement on the X axis 
+\begin{DoxyParams}{Parameters}
+{\em player\_\-loc} & QPoint containing the player's location \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classEnemy}{Enemy}.
+
+\hypertarget{classBoss_a43e296701933cb2cc18d7d6cfe521de5}{
+\index{Boss@{Boss}!shoot@{shoot}}
+\index{shoot@{shoot}!Boss@{Boss}}
+\subsubsection[{shoot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Enemy} $\ast$ Boss::shoot (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{player\_\-loc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classBoss_a43e296701933cb2cc18d7d6cfe521de5}
+Shoot an aimed (but not homing) missile 
+\begin{DoxyParams}{Parameters}
+{\em player\_\-loc} & QPoint containing the player's location \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classEnemy_ae672ccf745ec7fc74f9eb5d2001828d2}{Enemy}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+boss.h\item 
+boss.cpp\end{DoxyCompactItemize}

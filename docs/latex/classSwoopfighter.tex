@@ -1,0 +1,124 @@
+\hypertarget{classSwoopfighter}{
+\section{Swoopfighter Class Reference}
+\label{classSwoopfighter}\index{Swoopfighter@{Swoopfighter}}
+}
+
+
+A \hyperlink{classFighter}{Fighter} which will swoop down at the player, then rejoin the herd.  
+
+
+
+
+{\ttfamily \#include $<$swoopfighter.h$>$}
+
+Inheritance diagram for Swoopfighter:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classSwoopfighter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSwoopfighter_ac57910bbcee89f51a726e76b031dffa6}{Swoopfighter} (QPoint \hyperlink{classSwoopfighter_a71dfa74fb88e8a89ce3a70ba968d8ffa}{start\_\-location}, int \hyperlink{classSwoopfighter_af3483b706640a6311f6a1659fd485764}{ticks\_\-until\_\-charge}=200)
+\item 
+virtual void \hyperlink{classSwoopfighter_a787914ca7a7fe222037385867e930480}{move} (QPoint player\_\-loc)
+\item 
+virtual \hyperlink{classEnemy}{Enemy} $\ast$ \hyperlink{classSwoopfighter_aba26309d58b59785f9dcbdc7f22d49bd}{shoot} (QPoint player\_\-loc)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classSwoopfighter_af3483b706640a6311f6a1659fd485764}{
+int \hyperlink{classSwoopfighter_af3483b706640a6311f6a1659fd485764}{ticks\_\-until\_\-charge}}
+\label{classSwoopfighter_af3483b706640a6311f6a1659fd485764}
+
+\begin{DoxyCompactList}\small\item\em Ticks before the \hyperlink{classSwoopfighter}{Swoopfighter} should swoop. \end{DoxyCompactList}\item 
+\hypertarget{classSwoopfighter_af6f2e44ca84be95c191b0f6ff3fc3b24}{
+int \hyperlink{classSwoopfighter_af6f2e44ca84be95c191b0f6ff3fc3b24}{ticks\_\-until\_\-charge\_\-original}}
+\label{classSwoopfighter_af6f2e44ca84be95c191b0f6ff3fc3b24}
+
+\begin{DoxyCompactList}\small\item\em Ticks between swoops. \end{DoxyCompactList}\item 
+\hypertarget{classSwoopfighter_a60830b449baf49a768304530ed2c9601}{
+int \hyperlink{classSwoopfighter_a60830b449baf49a768304530ed2c9601}{ticks}}
+\label{classSwoopfighter_a60830b449baf49a768304530ed2c9601}
+
+\begin{DoxyCompactList}\small\item\em Keep track of the elapsed ticks. \end{DoxyCompactList}\item 
+\hypertarget{classSwoopfighter_a71dfa74fb88e8a89ce3a70ba968d8ffa}{
+QPoint \hyperlink{classSwoopfighter_a71dfa74fb88e8a89ce3a70ba968d8ffa}{start\_\-location}}
+\label{classSwoopfighter_a71dfa74fb88e8a89ce3a70ba968d8ffa}
+
+\begin{DoxyCompactList}\small\item\em Keep track of where the \hyperlink{classSwoopfighter}{Swoopfighter} should return to. \end{DoxyCompactList}\item 
+\hypertarget{classSwoopfighter_a858be11c9e75343caa5c0822f562a338}{
+bool \hyperlink{classSwoopfighter_a858be11c9e75343caa5c0822f562a338}{swoop}}
+\label{classSwoopfighter_a858be11c9e75343caa5c0822f562a338}
+
+\begin{DoxyCompactList}\small\item\em Whether the \hyperlink{classSwoopfighter}{Swoopfighter} is currently swooping. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classFighter}{Fighter} which will swoop down at the player, then rejoin the herd. 
+
+(ticks\_\-until\_\-charge should always be a multiple of 200) 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSwoopfighter_ac57910bbcee89f51a726e76b031dffa6}{
+\index{Swoopfighter@{Swoopfighter}!Swoopfighter@{Swoopfighter}}
+\index{Swoopfighter@{Swoopfighter}!Swoopfighter@{Swoopfighter}}
+\subsubsection[{Swoopfighter}]{\setlength{\rightskip}{0pt plus 5cm}Swoopfighter::Swoopfighter (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{start\_\-location, }
+\item[{int}]{ticks\_\-until\_\-charge = {\ttfamily 200}}
+\end{DoxyParamCaption}
+)}}
+\label{classSwoopfighter_ac57910bbcee89f51a726e76b031dffa6}
+Construct a new \hyperlink{classSwoopfighter}{Swoopfighter} 
+\begin{DoxyParams}{Parameters}
+{\em start\_\-location} & \\
+\hline
+{\em ticks\_\-until\_\-charge} & the number of ticks (1 tick = 10ms) before the fighter starts its swoop \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSwoopfighter_a787914ca7a7fe222037385867e930480}{
+\index{Swoopfighter@{Swoopfighter}!move@{move}}
+\index{move@{move}!Swoopfighter@{Swoopfighter}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}void Swoopfighter::move (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{player\_\-loc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classSwoopfighter_a787914ca7a7fe222037385867e930480}
+move the \hyperlink{classSwoopfighter}{Swoopfighter} 
+\begin{DoxyParams}{Parameters}
+{\em player\_\-loc} & the player's location \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classFighter_a3d14fd498ce5ade49b5107e3cd296dce}{Fighter}.
+
+\hypertarget{classSwoopfighter_aba26309d58b59785f9dcbdc7f22d49bd}{
+\index{Swoopfighter@{Swoopfighter}!shoot@{shoot}}
+\index{shoot@{shoot}!Swoopfighter@{Swoopfighter}}
+\subsubsection[{shoot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Enemy} $\ast$ Swoopfighter::shoot (
+\begin{DoxyParamCaption}
+\item[{QPoint}]{player\_\-loc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classSwoopfighter_aba26309d58b59785f9dcbdc7f22d49bd}
+give the \hyperlink{classSwoopfighter}{Swoopfighter} an opportunity to shoot. It will shoot normally in fighter mode, and fire a heavy volley in swoop mode \begin{DoxyReturn}{Returns}
+Bullet$\ast$ or NULL 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classFighter_aa5d46195ac8dcb7c83f61addcb5c2db5}{Fighter}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+swoopfighter.h\item 
+swoopfighter.cpp\end{DoxyCompactItemize}
